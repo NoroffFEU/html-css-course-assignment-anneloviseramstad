@@ -1,15 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Title, replace me!</title>
-  <link rel="stylesheet" href="src/css/styles.css">
-</head>
-<body class="centered">
-  <div>
-    <img src="/assets/images/noroff-logo.png" alt="Noroff Logo">
-    <h1>Hello World!</h1>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1" />
+    <meta name="description" content="The home page for Rainydays." />
+    <title>Rainydays|Home</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="images/rainydayslogoheader.jpg"
+        alt="rainydays logo-A dark green sketch in of a mountain with the text 'Rainy Days' underneath."
+      />
+      <nav>
+        <ul>
+          <li><a href="#">Man</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">(0)Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <img
+          src="images/header.img"
+          alt="Header image-A man standing on a cliff looking at the mountain view"
+        />
+        <h1>Unleash Your Comfort Zone!</h1>
+        <h2>
+          Get ready for your outdoor adventures in our lightweight rainjackets
+          that protects you from weather and wind without limiting your
+          experience.
+        </h2>
+        <h2>
+          <a href="#">Explore Now</a>
+        </h2>
+      </section>
+      <section>
+        <h2>Shop Men's</h2>
+        <div>
+          <img
+            src="images/mens.jpg"
+            alt="A man on a mountain looking at the
+          view"
+          />
+        </div>
+        <section>
+          <h2>Shop Women's</h2>
+          <div>
+            <img
+              src="images/womens.jpg"
+              alt="A woman wrapped in a jacket in the woods"
+            />
+          </div>
+        </section>
+        <div></div>
+      </section>
+      <section>
+        <img
+          src="images/discountbox.jpg"
+          alt="A box with a text for discount code"
+        />
+        <h2>-15%</h2>
+        <p>
+          Unlock the savings! Use code RAINYDAY15 at checkout for an exclusive
+          15% discount on our premium Rain Jackets. Embrace style, stay dry, and
+          save today!
+        </p>
+      </section>
+      <section>
+        <h2>Featured Products</h2>
+        <div class="carousel">
+          <div class="carousel-images">
+            <img
+              src="images/carouselimage1.jpg"
+              alt="image1"
+              class="carousel-image"
+            />
+            <img
+              src="images/carouselimage2.jpg"
+              alt="image2"
+              class="carousel-image"
+            />
+            <img
+              src="images/carouselimage3.jpg"
+              alt="image3"
+              class="carousel-image"
+            />
+            <img
+              src="images/carouselimage4.png"
+              alt="image4"
+              class="carousel-image"
+            />
+          </div>
+          <a class="prev" onclick="moveSlide(-1)"></a>
+          <a class="next" onclick="moveSlide(1)"></a>
+        </div>
+      </section>
+      <section>
+        <h3>RAINYDAYS</h3>
+        <h2>
+          “ We create high-quality jackets in a more sustainable manner. ”
+        </h2>
+      </section>
+    </main>
+    <footer>
+      <img
+        src="images/rainydayslogofooter.jpg"
+        alt="Header image-A man standing on a cliff looking at the mountain view"
+      />
+      <section>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </section>
+      <section>
+        <div class="newletter-signup">
+          <h3>Newsletter</h3>
+          <p>Sign Up To Our Newsletter To Get Special Offers!</p>
+          <form action="your-server-endpoint" method="POST">
+            <input
+              type="email"
+              name="email"
+              placeholder="name@example.com"
+              required
+            />
+          </form>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
