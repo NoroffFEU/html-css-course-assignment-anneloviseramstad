@@ -72,7 +72,7 @@ h1 {
   font-size: 40px;
   margin-bottom: 1.2rem;
   letter-spacing: -2px;
-  font-family: "Inter";
+  font-family: "Inter", "Open Sans", sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: capitalize;
   font-style: normal;
@@ -83,16 +83,15 @@ h2.first-style {
   color: #ffffff;
   font-weight: 500;
   font-size: 20px;
-  font-family: "Inter";
+  font-family: "Inter", "Open Sans", sans-serif;
   letter-spacing: -1px;
   font-style: normal;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #0a3641;
   margin-bottom: 1.2rem;
   width: 625px;
-height: 63.135px;
-flex-shrink: 0;
-
+  height: 63.135px;
+  flex-shrink: 0;
 }
 
 h2.first-style {
@@ -103,16 +102,16 @@ h2.first-style {
 }
 
 h2.second-style {
-  color: #FFF;
--webkit-text-stroke-width: 1;
--webkit-text-stroke-color: #000;
-font-family: Inter;
-font-size: 34.065px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -1.703px;
-text-transform: capitalize;
+  color: #fff;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-size: 34.065px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.703px;
+  text-transform: capitalize;
 }
 
 p {
@@ -136,7 +135,7 @@ ul li {
 ul li a {
   text-decoration: none;
   color: #0a3641;
-  font-family: "Inter";
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -180,8 +179,8 @@ ul li a {
 
 .header-container h2 {
   width: 474.576px;
-height: 126.271px;
-flex-shrink: 0;
+  height: 126.271px;
+  flex-shrink: 0;
   position: absolute;
   top: 420px;
   left: 79px;
@@ -191,7 +190,6 @@ flex-shrink: 0;
 .header-container .explore-button {
   top: 550px;
   left: 79px;
-
 }
 
 .explore-button {
@@ -201,7 +199,7 @@ flex-shrink: 0;
   background-color: #45b086;
   color: #ffffff;
   padding: 10px 40px;
-  font-family: "Inter";
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
@@ -220,19 +218,19 @@ flex-shrink: 0;
   color: #45b086;
 }
 
-
-.shop-container {
+.card-container {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  margin: 80px;
 }
 
-.card img {
+.card {
   position: relative;
-  width: 40%;
+  width: 550px;
+  height: 450px;
   border-radius: 20px;
   overflow: hidden;
-  margin: 98px;
+  margin: 10px;
 }
 
 .card img {
@@ -241,14 +239,23 @@ flex-shrink: 0;
   height: auto;
 }
 
-.card-text {
+.shop-button {
+  background-color: #ffffff3d;
+  color: #fff;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-size: 34.065px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.703px;
+  text-transform: capitalize;
+  font-family: 'Inter', "Open Sans", sans-serif;
   position: absolute;
   bottom: 10px;
-  left: 10px;
-}
-
-.shop-button {
-  padding: 10px 20px;
-  background-color: #FFF;
-  border: none;
+  left: 0;
+  top: 375px;
+  width: 626px;
+  height: 88px;
+  flex-shrink: 0;
 }
