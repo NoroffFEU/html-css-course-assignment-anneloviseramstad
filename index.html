@@ -4,67 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="widht=device-widht, initial-scale=1" />
     <meta name="description" content="The home page for Rainydays." />
+    <link rel="icon" href="/images/favicon1.PNG" type="image/png" />
+    <link href="src/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Rainydays|Home</title>
   </head>
 
   <body>
     <header>
-      <img
-        src="images/rainydayslogoheader.jpg"
-        alt="rainydays logo-A dark green sketch in of a mountain with the text 'Rainy Days' underneath."
-      />
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img src="images/rainydayslogoheader.jpg" alt="Rainydays Logo" />
+        </a>
+        <ul class="nav-links">
           <li><a href="#">Man</a></li>
           <li><a href="#">Women</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#">About Us</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">(0)Cart</a></li>
+          <li>
+            <a href="#cart" class="nav-cart">
+              Cart (<span id="cart-count">0</span>)
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="header-container">
         <img
-          src="images/header.img"
+          src="images/header.jpg"
           alt="Header image-A man standing on a cliff looking at the mountain view"
+          class="header-image"
         />
         <h1>Unleash Your Comfort Zone!</h1>
-        <h2>
+        <h2 class="first-style">
           Get ready for your outdoor adventures in our lightweight rainjackets
           that protects you from weather and wind without limiting your
           experience.
         </h2>
-        <h2>
-          <a href="#">Explore Now</a>
-        </h2>
+        <button type="button" class="explore-button">EXPLORE NOW</button>
       </section>
-      <section>
-        <h2>Shop Men's</h2>
-        <div>
-          <img
-            src="images/mens.jpg"
-            alt="A man on a mountain looking at the
-          view"
-          />
-        </div>
-        <section>
-          <h2>Shop Women's</h2>
-          <div>
-            <img
-              src="images/womens.jpg"
-              alt="A woman wrapped in a jacket in the woods"
-            />
+      <section class="shop-container">
+        <div class="card">
+          <img src="images/mens.jpg" alt="Shop Men's" />
+          <div class="card-text">
+            <button class="shop-button">Shop Men's</button>
           </div>
-        </section>
-        <div></div>
+        </div>
+        <div class="card">
+          <img src="images/womens.jpg" alt="Shop Women's" />
+          <div class="card-text">
+            <button class="shop-button">Shop Women's</button>
+          </div>
+        </div>
       </section>
       <section>
         <img
           src="images/discountbox.jpg"
           alt="A box with a text for discount code"
         />
-        <h2>-15%</h2>
+        <p>-15%</p>
         <p>
           Unlock the savings! Use code RAINYDAY15 at checkout for an exclusive
           15% discount on our premium Rain Jackets. Embrace style, stay dry, and
