@@ -16,34 +16,35 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+  max-width: 1440px;
+  margin: 0 auto;
   color: #0a3641;
   padding: 30px;
 }
 
 .nav-logo img {
-  top: 36.6px;
-  left: 79px;
+  margin-top: 36px;
+  margin-left: 80px;
   width: 149px;
-  height: 56.174px;
+  height: auto;
   flex-shrink: 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  align-items: 74px;
-  margin: 0;
+  justify-content: space-evenly;
+  margin-top: 36px;
+  margin-right: 80px;
   padding: 0;
 }
 
-.nav-links li {
-  margin-left: 90px;
-}
 
 .nav-links li a {
   text-decoration: none;
   color: #0a3641;
   font-weight: bold;
+  margin: 37px;
 }
 
 .nav-cart {
@@ -155,14 +156,16 @@ ul li a {
 }
 
 .header-image {
-  width: 1442px;
-  height: 703px;
+  width: auto;
+  height: auto;
   flex-shrink: 0;
 }
 
 .header-container {
+  display: flex;
+  justify-content: center;
   position: relative;
-  width: 100%;
+  width: auto;
   height: 703px;
   background-image: url(images/header.jpg);
   background-size: cover;
@@ -171,6 +174,8 @@ ul li a {
 
 .header-container h1,
 .header-container .explore-button {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 333px;
   left: 79px;
@@ -178,6 +183,8 @@ ul li a {
 }
 
 .header-container h2 {
+  display: flex;
+  justify-content: center;
   width: 474.576px;
   height: 126.271px;
   flex-shrink: 0;
@@ -188,11 +195,15 @@ ul li a {
 }
 
 .header-container .explore-button {
+  display: flex;
+  justify-content: center;
   top: 550px;
   left: 79px;
 }
 
 .explore-button {
+  display: flex;
+  justify-content: center;
   width: 280px;
   height: 49.041px;
   flex-shrink: 0;
@@ -220,8 +231,10 @@ ul li a {
 
 .card-container {
   display: flex;
-  justify-content: space-around;
-  margin: 80px;
+  justify-content: center;
+margin-top: 62px; 
+  gap: 98px;
+  margin-left: 80px;
 }
 
 .card {
@@ -231,12 +244,14 @@ ul li a {
   border-radius: 20px;
   overflow: hidden;
   margin: 10px;
+  
 }
 
 .card img {
-  width: 100%;
-  display: block;
+  width: auto;
+  display: flex;
   height: auto;
+  
 }
 
 .shop-button {
@@ -250,12 +265,71 @@ ul li a {
   line-height: normal;
   letter-spacing: -1.703px;
   text-transform: capitalize;
-  font-family: 'Inter', "Open Sans", sans-serif;
-  position: absolute;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  position:absolute;
   bottom: 10px;
   left: 0;
   top: 375px;
   width: 626px;
   height: 88px;
   flex-shrink: 0;
+}
+
+
+.discount-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 61px;
+  margin-bottom: 75px;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: rgba(217, 217, 217, 0.23);
+  max-width: 1280px;
+  height: 270px;
+  border-radius: 20px;
+}
+
+
+.discount-value {
+  display: flex;
+  color: #0A3641;
+  text-align: center;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-size: 86.044px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-left: 10px;¨
+  padding-right: 10px;
+}
+
+
+.discount-info {
+  color: #0A3641;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.featured h2 {
+  color: #0A3641;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-left: 80px;
+}
+
+.carousel-images {
+  margin-left:80px;
+  display: flex;
+  justify-content: space-between; 
+  gap: 97px;
 }
