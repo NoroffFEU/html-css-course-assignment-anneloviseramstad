@@ -109,42 +109,41 @@
         </div>
       </section>
     </main>
-    <footer>
-      <img
-        src="images/rainydayslogofooter.jpg"
-        alt="Header image-A man standing on a cliff looking at the mountain view"
-      />
-      <section>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Follow Us</h3>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Youtube</a></li>
-        </ul>
-      </section>
-      <section>
-        <div class="newletter-signup">
-          <h3>Newsletter</h3>
-          <p>Sign Up To Our Newsletter To Get Special Offers!</p>
-          <form action="your-server-endpoint" method="POST">
-            <input
-              type="email"
-              name="email"
-              placeholder="name@example.com"
-              required
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="#">
+            <img
+              src="images/footer-logo.jpg"
+              alt="Header image-A man standing on a cliff looking at the mountain view"
             />
-          </form>
+          </a>
         </div>
-      </section>
+        <div class="footer-links">
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Youtube</a>
+        </div>
+        <div class="footer-newsletter">
+          <label for="newsletter-email"
+            >Sign Up To Our Newsletter To Get Special Offers!</label
+          >
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="name@example.com"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
