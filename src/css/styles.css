@@ -11,7 +11,6 @@
   box-sizing: border-box;
 }
 
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,13 +19,13 @@
   max-width: 1440px;
   margin: 0 auto;
   color: #0a3641;
-  padding: 30px;
+  padding: 25px;
 }
 
 .nav-logo img {
   margin-top: 36px;
   margin-left: 80px;
-  width: 149px;
+  width: 180px;
   height: auto;
   flex-shrink: 0;
 }
@@ -39,7 +38,6 @@
   margin-right: 80px;
   padding: 0;
 }
-
 
 .nav-links li a {
   text-decoration: none;
@@ -69,12 +67,12 @@ body {
 }
 
 main {
-display: flex;
-flex-direction: column;
-gap: 50px;
-justify-content: center;
-align-items: center;
-} 
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
 
 h1 {
   color: #ffffff;
@@ -179,6 +177,7 @@ ul li a {
   background-image: url(images/header.jpg);
   background-size: cover;
   background-position: center;
+ 
 }
 
 .header-container h1,
@@ -219,7 +218,7 @@ ul li a {
   background-color: #45b086;
   color: #ffffff;
   padding: 10px 40px;
-  font-family: "Inter", "Open Sans", sans-serif;
+  font-family: 'Inter', "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
@@ -238,66 +237,96 @@ ul li a {
   color: #45b086;
 }
 
-.card-container {
+
+.shop-container {
   display: flex;
-  justify-content: center;
-margin-top: 62px; 
+  justify-content: space-between;
   gap: 98px;
-  
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card {
-  display: flex;
+.image-container {
   position: relative;
-  width: 550px;
-  height: 450px;
-  border-radius: 20px;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  
+  display: inline-block;
+  flex: 1;
+  width: 591px;
 }
 
-.card img {
-  width: auto;
-  display: flex;
-  justify-content: center;
+.image-container img {
+  width: 100%;
   height: auto;
+  display: block;
 }
 
+.shop-button {
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 214px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter', "Open Sans", sans-serif;
+  font-size: 34px;
+  color: #FFf;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 180px; 
+}
 
+.shop-container {
+  width: calc(100% - 98px);
+  margin: auto;
+}
 
+.mens-button {
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.24);
+width: 630px;
+height: 88px;
+flex-shrink: 0;
+color: #FFf;
+font-family: 'Inter', "Open Sans", sans-serif;
+font-size: 34.065px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.703px;
+text-transform: capitalize;
+}
 
 .discount-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(217, 217, 217, 0.23);
-  max-width: 1280px;
+  max-width: 1200px;
   height: 270px;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-
 .discount-value {
   display: flex;
-  color: #0A3641;
+  color: #0a3641;
   text-align: center;
-  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-family: 'Inter', "Open Sans", sans-serif;
   font-size: 86.044px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  padding-left: 10px;¨
+  padding-left: 10px;
   padding-right: 10px;
 }
 
-
 .discount-info {
-  color: #0A3641;
-  font-family: 'Inter', 'Open Sans', sans-serif;
+  color: #0a3641;
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -307,49 +336,79 @@ margin-top: 62px;
 }
 
 .featured h2 {
-  color: #0A3641;
-  font-family: 'Inter', 'Open Sans', sans-serif;
+  color: #0a3641;
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: capitalize;
   margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: left;
+  align-items: left;
 }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
 
 .carousel-images {
-  margin-left:80px;
   display: flex;
-  justify-content: space-between; 
-  gap: 97px;
+  justify-content: space-between;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
+.carousel-image {
+  width: 100%;
+  display: flex;
+}
+
+.custom-button {
+background-image: url(/images/button-slider.svg);
+background-color: #fff;
+background-size: cover;
+background-repeat: no-repeat;
+border: none;
+color: #FFf;
+font-family:  'Inter', "Open Sans", sans-serif;
+font-size: 36px; 
+width: 56px;
+height: 56px;
+}
 
 
 
 .minilogo h3 {
   margin-top: 195px;
-display: flex;
-justify-content: left;
-color: rgba(0, 0, 0, 0.49);
-text-align: left;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-font-family: 'Inter', 'Open Sans', sans-serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -1.2px;
-text-transform: capitalize;
+  display: flex;
+  justify-content: left;
+  color: rgba(0, 0, 0, 0.49);
+  text-align: left;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Inter', "Open Sans", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
 }
-
 
 .slogan-text h2 {
   display: flex;
   justify-content: center;
-  color: #0A3641;
+  color: #0a3641;
   text-align: center;
-  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 40px;
   font-style: italic;
   font-weight: 300;
@@ -361,14 +420,14 @@ text-transform: capitalize;
 .footer {
   display: flex;
   margin-top: 168px;
- background-color: #f5f5f5;
- padding: 20 px 0;
- padding-bottom: 104px;
- padding-top: 48px;
- font-size: 14 px;
-line-height: 1.6;
-color: #000;
-  } 
+  background-color: #f5f5f5;
+  padding: 20 px 0;
+  padding-bottom: 104px;
+  padding-top: 48px;
+  font-size: 14 px;
+  line-height: 1.6;
+  color: #000;
+}
 
 .footer-container {
   background-color: #f5f5f5;
@@ -379,49 +438,94 @@ color: #000;
   padding: 0 20px;
 }
 
-
-
 .footer-logo img {
   max-width: 251px;
   background-color: #f5f5f5;
+
 }
 
-.footer-links, .footer-social {
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 
+  2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer-nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-nav > * {
+  flex: 
+  1 50%;
+  margin-right: 1.25em;
+}
+
+.links-ul a {
+color: #000;
+}
+
+.social-ul {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #000;
+}
+
+
+.footer-links,
+.footer-social {
   display: flex;
 }
 
-.footer-links a, .footer-social a {
+.footer-links a,
+.footer-social a {
+  font-family:  "Inter", "Open Sans", sans-serif;
+  font-size: 1;
   text-decoration: none;
   color: #000;
   margin-right: 20px;
 }
 
-.footer-newsletter {
+.footer-signup {
   text-align: right;
 }
 
-.footer-newsletter input[type="email"] {
+.nav-signup input[type="email"] {
   padding: 5px;
   margin-top: 10px;
   margin-right: 10px;
 }
 
-.footer-newsletter button {
+.nav-signup button {
   padding: 5px 10px;
 }
 
 @media (max-width: 768px) {
   .footer-container {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .footer-links,
   .footer-social {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .footer-newsletter {
-      align-self: stretch;
-      text-align: center;
+    align-self: stretch;
+    text-align: center;
   }
+}

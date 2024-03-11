@@ -51,14 +51,16 @@
         </h2>
         <button type="button" class="explore-button">EXPLORE NOW</button>
       </section>
-      <section class="card-container">
-        <div class="card">
+      <div class="shop-container">
+        <div class="image-container">
           <img src="images/mens.jpg" alt="Shop Men's" />
+          <button class="shop-button">SHOP MEN'S</button>
         </div>
-        <div class="card">
+        <div class="image-container">
           <img src="images/womens.jpg" alt="Shop Women's" />
+          <button class="shop-button">SHOP WOMEN'S</button>
         </div>
-      </section>
+      </div>
       <section class="discount-banner">
         <div class="discount-value">-15%</div>
         <div class="discount-info">
@@ -94,8 +96,7 @@
               class="carousel-image"
             />
           </div>
-          <a class="prev" onclick="moveSlide(-1)"></a>
-          <a class="next" onclick="moveSlide(1)"></a>
+          <button class="custom-button">></button>
         </div>
       </section>
       <section class="slogan">
@@ -113,24 +114,50 @@
       <div class="footer-container">
         <div class="footer-logo">
           <a href="#">
-            <img
-              src="images/footer-logo.jpg"
-              alt="Header image-A man standing on a cliff looking at the mountain view"
-            />
+            <img src="images/logo-footer.png" alt="Rainydays Logo" />
           </a>
         </div>
-        <div class="footer-links">
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </div>
-        <div class="footer-social">
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          <a href="#">Youtube</a>
-        </div>
-        <div class="footer-newsletter">
+        <ul class="footer-nav">
+          <li class="footer-links">
+            <h2 class="links-title">Quick Links</h2>
+
+            <ul class="links-ul">
+              <li>
+                <a href="#">Men</a>
+              </li>
+
+              <li>
+                <a href="#">Women</a>
+              </li>
+
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-social">
+            <h2 class="social-title">Follow Us</h2>
+
+            <ul class="socials-ul">
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+
+              <li>
+                <a href="#">Youtube</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer-signup">
           <label for="newsletter-email"
             >Sign Up To Our Newsletter To Get Special Offers!</label
           >
