@@ -11,6 +11,8 @@
   box-sizing: border-box;
 }
 
+/* Navigation bar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -74,6 +76,9 @@ main {
   align-items: center;
 }
 
+/* Home page */
+
+/* Header */
 h1 {
   color: #ffffff;
   font-weight: 600;
@@ -163,7 +168,8 @@ ul li a {
 }
 
 .header-image {
-  width: auto;
+  width: 100%;
+  max-width: 1440px;
   height: auto;
   flex-shrink: 0;
 }
@@ -172,12 +178,14 @@ ul li a {
   display: flex;
   justify-content: center;
   position: relative;
-  width: auto;
-  height: 703px;
+  width: 100%;
+  height: auto;
   background-image: url(images/header.jpg);
-  background-size: cover;
+  background-size: auto;
   background-position: center;
- 
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
 }
 
 .header-container h1,
@@ -188,6 +196,7 @@ ul li a {
   top: 333px;
   left: 79px;
   color: #ffffff;
+  background-repeat: no-repeat;
 }
 
 .header-container h2 {
@@ -218,7 +227,7 @@ ul li a {
   background-color: #45b086;
   color: #ffffff;
   padding: 10px 40px;
-  font-family: 'Inter', "Open Sans", sans-serif;
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
@@ -237,6 +246,7 @@ ul li a {
   color: #45b086;
 }
 
+/* Main */
 
 .shop-container {
   display: flex;
@@ -266,16 +276,16 @@ ul li a {
   transform: translate(-50%, -50%);
   padding: 20px 214px;
   background-color: rgba(255, 255, 255, 0.24);
-  font-family: 'Inter', "Open Sans", sans-serif;
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 34px;
-  color: #FFf;
+  color: #fff;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #000;
   border: none;
   border-radius: 20px;
   text-align: center;
   white-space: nowrap;
-  min-width: 180px; 
+  min-width: 180px;
 }
 
 .shop-container {
@@ -284,19 +294,19 @@ ul li a {
 }
 
 .mens-button {
-border-radius: 20px;
-background: rgba(255, 255, 255, 0.24);
-width: 630px;
-height: 88px;
-flex-shrink: 0;
-color: #FFf;
-font-family: 'Inter', "Open Sans", sans-serif;
-font-size: 34.065px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -1.703px;
-text-transform: capitalize;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.24);
+  width: 630px;
+  height: 88px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-size: 34.065px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.703px;
+  text-transform: capitalize;
 }
 
 .discount-banner {
@@ -315,7 +325,7 @@ text-transform: capitalize;
   display: flex;
   color: #0a3641;
   text-align: center;
-  font-family: 'Inter', "Open Sans", sans-serif;
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 86.044px;
   font-style: normal;
   font-weight: 800;
@@ -358,7 +368,6 @@ text-transform: capitalize;
   margin: auto;
 }
 
-
 .carousel-images {
   display: flex;
   justify-content: space-between;
@@ -373,19 +382,17 @@ text-transform: capitalize;
 }
 
 .custom-button {
-background-image: url(/images/button-slider.svg);
-background-color: #fff;
-background-size: cover;
-background-repeat: no-repeat;
-border: none;
-color: #FFf;
-font-family:  'Inter', "Open Sans", sans-serif;
-font-size: 36px; 
-width: 56px;
-height: 56px;
+  background-image: url(/images/button-slider.svg);
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  color: #fff;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-size: 36px;
+  width: 56px;
+  height: 56px;
 }
-
-
 
 .minilogo h3 {
   margin-top: 195px;
@@ -394,7 +401,7 @@ height: 56px;
   color: rgba(0, 0, 0, 0.49);
   text-align: left;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Inter', "Open Sans", sans-serif;
+  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -415,10 +422,16 @@ height: 56px;
   line-height: normal;
   letter-spacing: -2px;
   text-transform: capitalize;
+  margin-bottom: 168px;
 }
+
+/* Footer */
 
 .footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
   margin-top: 168px;
   background-color: #f5f5f5;
   padding: 20 px 0;
@@ -427,76 +440,33 @@ height: 56px;
   font-size: 14 px;
   line-height: 1.6;
   color: #000;
+  position: relative;
+  height: 246px;
 }
 
 .footer-container {
   background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: auto;
-  padding: 0 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-left,
+.container-middle,
+.container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer-logo img {
   max-width: 251px;
   background-color: #f5f5f5;
-
-}
-
-.footer ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer li {
-  line-height: 
-  2em;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer-nav {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.footer-nav > * {
-  flex: 
-  1 50%;
-  margin-right: 1.25em;
-}
-
-.links-ul a {
-color: #000;
-}
-
-.social-ul {
-  column-count: 2;
-  column-gap: 1.25em;
-}
-
-.legal {
-  display: flex;
-  flex-wrap: wrap;
-  color: #000;
-}
-
-
-.footer-links,
-.footer-social {
-  display: flex;
-}
-
-.footer-links a,
-.footer-social a {
-  font-family:  "Inter", "Open Sans", sans-serif;
-  font-size: 1;
-  text-decoration: none;
-  color: #000;
-  margin-right: 20px;
+  margin-right: 70px;
 }
 
 .footer-signup {
@@ -509,8 +479,65 @@ color: #000;
   margin-right: 10px;
 }
 
-.nav-signup button {
-  padding: 5px 10px;
+
+.footer-container {
+  max-width: 1440px;
+}
+
+.footer-container strong {
+  font-weight: bold;
+}
+
+.footer-container div.container {
+  width: 300px;
+  float: left;
+}
+
+.footer-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container ul li {
+  width: 160px;
+  float: left;
+}
+
+footer::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: calc(100%-30px);
+  height: 1px;
+  background: #000;
+
+}
+
+.container-right {
+  text-align: right;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.container-right,
+p {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #000;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container-right button {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  color: #000;
+  border: none;
 }
 
 @media (max-width: 768px) {
