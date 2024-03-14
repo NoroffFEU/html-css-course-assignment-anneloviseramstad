@@ -83,7 +83,7 @@ main {
 
 .hero {
   background-color: #0a3641;
-  background-image: url(../images/header.jpg);
+  background-image: url(/images/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
