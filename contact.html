@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widht=device-widht, initial-scale=1" />
+    <meta name="description" content="The checkout page for Rainydays." />
+    <link rel="icon" href="/images/favicon1.PNG" type="image/png" />
+    <link href="src/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Rainydays | Checkout</title>
+  </head>
+  <body>
+    <main>
+      <form action="checkout-success.html" method="post">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form__input" />
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" class="form__input" />
+        </fieldset>
+        <fieldset>
+          <legend>Delivery Address</legend>
+          <label for="name">First Name</label>
+          <input type="text" name="name" id="name" class="form__input" />
+          <label for="name">Last Name</label>
+          <input type="text" name="name" id="name" class="form__input" />
+          <label for="name">Street Address</label>
+          <input type="text" name="name" id="name" class="form__input" />
+          <label for="name">Postcode</label>
+          <input type="text" name="name" id="name" class="form__input" />
+          <label for="name">City</label>
+          <input type="text" name="name" id="name" class="form__input" />
+          <label for="name">Country</label>
+          <input type="text" name="name" id="name" class="form__input" />
+        </fieldset>
+        <fieldset>
+          <legend>Payment Method</legend>
+          <p>Choose Payment</p>
+          <div>
+            <input type="radio" id="Paypal" name="Payment" value="Paypal" />
+            <label for="Paypal">Paypal</label>
+            <input
+              type="radio"
+              id="creditcard"
+              name="Payment"
+              value="creditcard"
+            />
+            <label for="creditcard">Credit Card</label>
+
+            <input type="radio" id="klarna" name="Payment" value="klarna" />
+            <label for="klarna">Klarna</label>
+          </div>
+          <label for="name">Card Number</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            required
+          />
+          <label for="name">Expedition Date</label>
+          <input
+            type="date"
+            name="date"
+            id="date"
+            class="form__input"
+            required
+          />
+          <label for="name">CVV</label>
+          <input
+            type="text"
+            name="cvv"
+            id="cvv"
+            inputmode="numeric"
+            pattern="\d*"
+            maxlength="3"
+            autocomplete="cc-csc"
+            class="form__input"
+            required
+          />
+          <label for="name">Discount Code</label>
+          <input type="text" name="name" id="name" class="form__input" />
+        </fieldset>
+        <fieldset>
+          <legend>Order Summary</legend>
+          <p>1x Adventure Jacket</p>
+          <p>$249.00</p>
+          <p>Subtotal</p>
+          <p>$249.00</p>
+          <p>Shipping</p>
+          <p>FREE</p>
+          <strong>TOTAL</strong>
+          <strong>$249.00</strong>
+        </fieldset>
+      </form>
+      <button>Complete Order</button>
+    </main>
+  </body>
+</html>

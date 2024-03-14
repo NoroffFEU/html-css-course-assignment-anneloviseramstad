@@ -12,15 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Rainydays|Home</title>
+    <title>Rainydays | Home</title>
   </head>
 
   <body>
     <header>
       <nav class="navbar">
         <a href="#" class="nav-logo">
-          <img src="images/rainydayslogofooter.jpg" alt="Rainydays Logo" />
+          <img src="images/rainydayslogo.png" alt="Rainydays Logo" />
         </a>
         <ul class="nav-links">
           <li><a href="#">Man</a></li>
@@ -36,22 +35,20 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="header-container">
-        <img
-          src="images/header.jpg"
-          alt="Header image-A man standing on a cliff looking at the mountain view"
-          class="header-image"
-        />
-        <h1>Unleash Your Comfort Zone!</h1>
-        <h2 class="first-style">
-          Get ready for your outdoor adventures in our lightweight rainjackets
-          that protects you from weather and wind without limiting your
-          experience.
-        </h2>
-        <button type="button" class="explore-button">EXPLORE NOW</button>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Unleash Your Comfort Zone!</h1>
+          <article>
+            Get ready for your outdoor adventures in our lightweight rainjackets
+            that protects you from weather and wind without limiting your
+            experience.
+          </article>
+          <button class="explore-button">EXPLORE NOW</button>
+        </div>
       </section>
-      <div class="shop-container">
+      <section class="shop-container">
         <div class="image-container">
           <img src="images/mens.jpg" alt="Shop Men's" />
           <button class="shop-button">SHOP MEN'S</button>
@@ -60,91 +57,70 @@
           <img src="images/womens.jpg" alt="Shop Women's" />
           <button class="shop-button">SHOP WOMEN'S</button>
         </div>
-      </div>
-      <section class="discount-banner">
-        <div class="discount-value">-15%</div>
-        <div class="discount-info">
-          <p>
-            Unlock the savings! Use code RAINYDAYS15 at checkout for an
-            exclusive 15% discount on our premium Rain Jackets. Embrace style,
-            stay dry, and save today!
-          </p>
-        </div>
       </section>
-      <section class="featured">
-        <h2>Featured Products</h2>
+      <section class="discount-banner">
+        <h2 class="discount-value">-15%</h2>
+        <p class="discount-info">
+          Unlock the savings! Use code RAINYDAY15 at checkout for an exclusive
+          15% discount on our premium Rain Jackets. Embrace style, stay dry, and
+          save today!
+        </p>
+      </section>
+      <section>
+        <h2 class="featured-products">Featured Products</h2>
+        <hr />
         <div class="carousel">
           <div class="carousel-images">
             <img
+              class="carousel-image"
               src="images/carouselimage1.jpg"
-              alt="image1"
+              alt="Picture of a red and black jacket"
               class="carousel-image"
             />
             <img
               src="images/carouselimage2.jpg"
-              alt="image2"
+              alt="Picture of a beige jacket"
               class="carousel-image"
             />
             <img
               src="images/carouselimage3.jpg"
-              alt="image3"
-              class="carousel-image"
-            />
-            <img
-              src="images/carouselimage4.png"
-              alt="image4"
+              alt="Picture of a green jacket"
               class="carousel-image"
             />
           </div>
-          <button class="custom-button">></button>
         </div>
       </section>
       <section class="slogan">
-        <div class="minilogo">
-          <h3>RAINYDAYS</h3>
-        </div>
-        <div class="slogan-text">
-          <h2>
-            “ We create high-quality jackets in a more sustainable manner. ”
-          </h2>
-          <img src="images/carousel1.jpg" />
-        </div>
+        <strong>RAINYDAYS</strong>
+        <h3>
+          “ We create high-quality jackets in a more sustainable manner. ”
+        </h3>
       </section>
     </main>
-    <footer class="footer-container">
-      <div class="footer-logo">
-        <a href="#">
-          <img src="images/logo-footer.png" alt="Rainydays Logo" />
-        </a>
-      </div>
-      <div class="container left">
-        <strong>Quick Links</strong>
+    <footer class="ft-main">
+      <div class="ft-main-item">
+        <h2 class="ft-title">Quick Links</h2>
         <ul>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#">Man</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="container middle">
-        <strong>Follow Us</strong>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Follow Us</h2>
         <ul>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Youtube</li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
         </ul>
       </div>
-      <div class="container right">
-        <strong>Newsletter</strong>
-        <p>Sign Up To Our Newsletter To Get Special Offers!</p>
-        <form action="#" method="post">
-          <input
-            type="email"
-            id="newsletter-email"
-            placeholder="name@example.com"
-            name="email"
-          />
-          <button type="submit">Subscribe</button>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Newsletter</h2>
+        <p>Sign up to our newsletter to get special offers!</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address" />
+          <input type="submit" value="Subscribe" />
         </form>
       </div>
     </footer>
