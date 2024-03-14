@@ -25,14 +25,6 @@ body {
   padding: 25px;
 }
 
-@media (max-widht: 430px) {
-  .navbar {
-    display: block;
-    position: static;
-  }
-}
-
-
 .nav-links {
   list-style: none;
   display: flex;
