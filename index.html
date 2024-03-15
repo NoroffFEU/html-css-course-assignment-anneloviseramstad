@@ -17,21 +17,20 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html" class="nav-logo">
-          <img src="images/rainydayslogo.png" alt="Rainydays Logo" />
-        </a>
-        <ul class="nav-links">
+      <a class="header-logo" href="index.html" class="nav-logo"
+        ><img
+          height="56"
+          width="149"
+          src="images/footer-logo.jpg"
+          alt="Rainydays logo"
+      /></a>
+      <nav>
+        <ul>
           <li><a href="#">Man</a></li>
           <li><a href="#">Women</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="checkout.html">Contact</a></li>
-          <li>
-            <a href="#cart" class="nav-cart">
-              <img src="images/cart-icon.jpg" alt="cart-icon" />
-              Cart (<span id="cart-count">0</span>)
-            </a>
-          </li>
+          <li><a href="#">(0)Cart</a></li>
         </ul>
       </nav>
     </header>
@@ -49,45 +48,51 @@
         </div>
       </section>
       <section class="shop-container">
-        <div class="image-container">
+        <div class="shop-cards">
           <img src="images/mens.jpg" alt="Shop Men's" />
-          <button class="shop-button">SHOP MEN'S</button>
         </div>
-        <div class="image-container">
+        <div class="shop-cards">
           <img src="images/womens.jpg" alt="Shop Women's" />
-          <button class="shop-button">SHOP WOMEN'S</button>
         </div>
       </section>
       <section class="discount-banner">
-        <h2 class="discount-value">-15%</h2>
-        <p class="discount-info">
-          Unlock the savings! Use code RAINYDAY15 at checkout for an exclusive
-          15% discount on our premium Rain Jackets. Embrace style, stay dry, and
-          save today!
-        </p>
+        <div class="discount-information">
+          <h2 class="discount-value">-15%</h2>
+          <p class="discount-text">
+            Unlock the savings! Use code RAINYDAY15 at checkout for an exclusive
+            15% discount on our premium Rain Jackets. Embrace style, stay dry,
+            and save today!
+          </p>
+        </div>
       </section>
-      <section>
-        <h2 class="featured-products">Featured Products</h2>
-        <hr />
-        <div class="carousel">
-          <div class="carousel-images">
-            <img
-              class="carousel-image"
-              src="images/carouselimage1.jpg"
-              alt="Picture of a red and black jacket"
-              class="carousel-image"
-            />
-            <img
-              src="images/carouselimage2.jpg"
-              alt="Picture of a beige jacket"
-              class="carousel-image"
-            />
-            <img
-              src="images/carouselimage3.jpg"
-              alt="Picture of a green jacket"
-              class="carousel-image"
-            />
-          </div>
+      <section class="carousel">
+        <h2>Featured Products</h2>
+        <div class="carousel-products">
+          <img
+            src="images/carouselimage1.jpg"
+            alt="Picture of a red and black jacket."
+          />
+          <h3>Adventure Jacket</h3>
+          <p>$249.00</p>
+          <a href="product.html" class="cta">View</a>
+        </div>
+        <div class="carousel-products">
+          <img
+            src="images/carouselimage2.jpg"
+            alt="Picture of a red and black jacket."
+          />
+          <h3>Adventure Jacket</h3>
+          <p>$199.00</p>
+          <a href="product.html" class="cta">View</a>
+        </div>
+        <div class="carousel-products">
+          <img
+            src="images/carouselimage3.jpg"
+            alt="Picture of a red and black jacket."
+          />
+          <h3>Adventure Jacket</h3>
+          <p>$199.00</p>
+          <a href="product.html" class="cta">View</a>
         </div>
       </section>
       <section class="slogan">
