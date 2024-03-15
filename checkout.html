@@ -18,7 +18,7 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="#" class="nav-logo">
+        <a href="index.html" class="nav-logo">
           <img src="images/rainydayslogo.png" alt="Rainydays Logo" />
         </a>
         <ul class="nav-links">
@@ -36,16 +36,16 @@
       </nav>
     </header>
     <main>
+      <section class="order-review"></section>
       <form action="checkout-success.html" method="post">
         <fieldset>
-          <legend>Contact Information</legend>
+          <legend>2. Shipping Information</legend>
+          <p>Contact Information</p>
           <label for="email">Email</label>
           <input type="email" name="email" id="email" class="form__input" />
           <label for="phone">Phone</label>
           <input type="tel" name="phone" id="phone" class="form__input" />
-        </fieldset>
-        <fieldset>
-          <legend>Delivery Address</legend>
+          <p>Delivery Address</p>
           <label for="name">First Name</label>
           <input type="text" name="name" id="name" class="form__input" />
           <label for="name">Last Name</label>
@@ -60,7 +60,7 @@
           <input type="text" name="name" id="name" class="form__input" />
         </fieldset>
         <fieldset>
-          <legend>Payment Method</legend>
+          <legend>3. Payment Method</legend>
           <p>Choose Payment</p>
           <div>
             <input type="radio" id="Paypal" name="Payment" value="Paypal" />
@@ -108,7 +108,7 @@
           <input type="text" name="name" id="name" class="form__input" />
         </fieldset>
         <fieldset>
-          <legend>Order Summary</legend>
+          <legend>4. Order Summary</legend>
           <p>1x Adventure Jacket</p>
           <p>$249.00</p>
           <p>Subtotal</p>
@@ -121,5 +121,32 @@
       </form>
       <button>Complete Order</button>
     </main>
+    <footer class="ft-main">
+      <div class="ft-main-item">
+        <h2 class="ft-title">Quick Links</h2>
+        <ul>
+          <li><a href="#">Man</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Follow Us</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Newsletter</h2>
+        <p>Sign up to our newsletter to get special offers!</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
