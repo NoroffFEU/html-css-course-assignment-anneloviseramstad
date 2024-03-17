@@ -5,31 +5,28 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
+/* Styles for every page */
+
 body {
   font-family: "Inter", "Open Sans", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
-
-:root {
-  --default-side-padding: 4.63vW;
-}
-
-/* HOME PAGE */
-
-/* Navigation Menu*/
 
 header {
- display: flex;
- align-items: center;
- z-index: 10000;
- justify-content: space-between;
- padding: 0 48px;
- min-height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 10000;
+  justify-content: space-between;
+  padding: 0 48px;
+  min-height: 80px;
 }
+
 
 .header-logo {
-margin-right: 25px;
+  margin-right: 25px;
 }
-
 
 nav li {
   display: inline-block;
@@ -44,11 +41,70 @@ header a {
   padding: 40px;
 }
 
-/* Main Section */
-
-main {
- 
+footer {
+  background-color: #f5f5f5;
+  color: #000;
+  line-height: 1.5;
 }
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  color: #000;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-size: 14px;
+  padding-bottom: 0.1rem;
+}
+
+.ft-main {
+  padding: 1.5rem 14rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ft-main-item {
+  max-width: 1440px;
+  padding: 1.25rem;
+  min-width: 200px;
+}
+
+@media (max-width: 430px) {
+  .ft-main {
+    display: flex;
+    flex-direction: column; 
+    padding: 2.5rem;
+  }
+}
+
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+
+input[type="submit"] {
+  background-color: #0a3641;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+
+/* HOME PAGE */
 
 /* Hero */
 
@@ -66,6 +122,7 @@ main {
   position: relative;
 }
 
+
 .hero-content {
   position: absolute;
   color: #ffffff;
@@ -73,14 +130,14 @@ main {
   left: 40px;
 }
 
-h1 {
+.hero h1 {
   font-size: 40px;
   font-weight: 600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-left: 80px;
 }
 
-article {
+.hero article {
   font-size: 20px;
   font-weight: 500;
   -webkit-text-stroke-width: 1;
@@ -105,6 +162,7 @@ article {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   outline: none;
   margin-left: 80px;
+  cursor: pointer;
 }
 
 .explore-button:hover {
@@ -120,10 +178,20 @@ article {
   max-width: 1440px;
   margin: 50px auto;
   place-items: center;
+  gap: 20px;
 }
 
+.shop-container img {
+max-width: 100%;
+height: auto;
+}
 
-
+@media (max-width: 700px) {
+  .shop-container {
+    grid-template-columns: 1fr;
+  }
+  
+}
 
 /* Discount banner */
 
@@ -151,9 +219,7 @@ article {
   padding: 0 60px;
 }
 
-/* Featured products */
-
-/*Add buttons to carousel*/
+/* Featured products */ /*!Add buttons to carousel!*/
 
 .featured h2 {
   margin-top: 100px;
@@ -174,20 +240,20 @@ article {
   grid-gap: 60px;
 }
 
-
 .carousel img {
   width: 100%;
 }
 
-/* Slogan */  /* Minilogo to the left, not centered */
+  
+
+/* Slogan */ /* !Move Minilogo to the left, not centered! */
 
 .slogan {
   margin: 150px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
- max-width: 955px;
- text-align: center;
+  max-width: 955px;
+  text-align: center;
 }
 
 .slogan strong {
@@ -206,79 +272,77 @@ article {
   font-weight: 300;
 }
 
-/* Footer */       /*How do i center the items inside the footer?*/
+/* Footer */ /*How do i center the items inside the footer?*/
 
 ul {
   list-style: none;
   padding-left: 0;
 }
 
-footer {
-  background-color: #f5f5f5;
-  color: #000;
-  line-height: 1.5;
-  
-}
+/* CHECKOUT SUCCESS PAGE */
 
-footer a {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.ft-title {
-  color: #000;
+.order-confirmed {
   font-family: "Inter", "Open Sans", sans-serif;
-  font-size: 14px;
-  padding-bottom: 0.1rem;
-}
-
-.ft-main {
-  padding: 1.5rem 14rem;
+  margin: 100px auto;
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.ft-main-item {
-  max-width: 1440px;
-  padding: 1.25rem;
-  min-width: 200px;
-}
-
-@media only screen and (min-widht: 477px) {
-  .ft-main {
-    justify-content: space-around;
+.order-confirmed img {
+  max-width: 100%;
+  height: auto;
   }
+
+.order-confirmed h1 {
+  color: #0a3641;
+  font-size: 36px;
+  font-weight: 600;
 }
 
-@media only screen and (min-widht: 1240px) {
-  .ft-main {
-    justify-content: space-evenly;
-  }
+.order-confirmed p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
+.order-confirmed article {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 40px 0;
+  max-width: 700px;
 }
 
-input[type="email"] {
-  border: 0;
-  padding: 0.625rem;
-  margin-top: 0.3125rem;
-}
 
-input[type="submit"] {
-  background-color: #0a3641;
+.order-confirmed button {
   color: #ffffff;
-  cursor: pointer;
-  border: 0;
-  padding: 0.625rem 0.9375rem;
-  margin-top: 0.3125rem;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #0a3641;
+  border-radius: 38px;
+  width: 390px;
+  height: 50px;
 }
 
-/* CONTACT PAGE */
+
+@media (max-width: 430px) {
+  .order-confirmed h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+  }
+  
+  @media (max-width: 430px) {
+    .order-confirmed p article {
+      font-size: 14px;
+    }
+    }
+
+    @media (max-width: 430px) {
+      .order-confirmed button {
+        font-size: 14px;
+      }
+      }
