@@ -17,15 +17,19 @@ body {
 header {
   display: flex;
   align-items: center;
-  z-index: 10000;
   justify-content: space-between;
   padding: 0 48px;
   min-height: 80px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
+@media (max-width:430px) {
+
+}
 
 .header-logo {
-  margin-right: 25px;
+  margin-left: 25px;
 }
 
 nav li {
@@ -39,6 +43,9 @@ a {
 header a {
   color: #0a3641;
   padding: 40px;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 footer {
@@ -70,7 +77,7 @@ a:hover {
 }
 
 .ft-main-item {
-  max-width: 1440px;
+  max-width: 1280px;
   padding: 1.25rem;
   min-width: 200px;
 }
@@ -175,10 +182,10 @@ input[type="submit"] {
 .shop-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 50px auto;
   place-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .shop-container img {
@@ -214,7 +221,7 @@ height: auto;
   display: flex;
   color: #0a3641;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 50px auto;
   padding: 0 60px;
 }
@@ -230,20 +237,36 @@ height: auto;
   color: #0a3641;
   font-size: 36px;
   font-family: "Inter", "Open Sans", sans-serif;
+  padding-left: 80px;
 }
 
 .carousel {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1440px;
+  max-width: 1280px;
   margin: auto;
-  grid-gap: 60px;
+  
 }
 
 .carousel img {
   width: 100%;
 }
 
+.carousel-products {
+  display: grid;
+  justify-content: center;
+}
+
+.shop-button {
+  width: 100px;
+  padding: 8px 30px;
+  font-size: 0.8em;
+  color: #ffffff;
+  background-color: #0a3641;
+  border-radius: 15px;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 500;
+}
   
 
 /* Slogan */ /* !Move Minilogo to the left, not centered! */
@@ -336,8 +359,9 @@ ul {
   }
   
   @media (max-width: 430px) {
-    .order-confirmed p article {
+    .order-confirmed article {
       font-size: 14px;
+      padding: 0 30px;
     }
     }
 
@@ -345,4 +369,21 @@ ul {
       .order-confirmed button {
         font-size: 14px;
       }
+      }
+
+
+      /* Man/Women Page */
+
+      .product-list {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+      }
+
+      .products img {
+        width: 100%;
+      }
+
+      .jackets {
+        max-width: 1280px;
       }
