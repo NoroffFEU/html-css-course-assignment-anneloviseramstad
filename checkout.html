@@ -26,7 +26,7 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="#">MAN</a></li>
+          <li><a href="#">MEN</a></li>
           <li><a href="#">WOMEN</a></li>
           <li><a href="#">ABOUT US</a></li>
           <li><a href="checkout.html">CONTACT</a></li>
@@ -35,88 +35,114 @@
       </nav>
     </header>
     <main>
-      <section class="order-review"></section>
+      <hr class="hr-header" />
+      <p class="header-info">Home > Shop > Product > Checkout</p>
       <form action="checkout-success.html" method="post">
-        <fieldset>
-          <legend>2. Shipping Information</legend>
-          <p>Contact Information</p>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="form__input" />
-          <label for="phone">Phone</label>
-          <input type="tel" name="phone" id="phone" class="form__input" />
-          <p>Delivery Address</p>
-          <label for="name">First Name</label>
-          <input type="text" name="name" id="name" class="form__input" />
-          <label for="name">Last Name</label>
-          <input type="text" name="name" id="name" class="form__input" />
-          <label for="name">Street Address</label>
-          <input type="text" name="name" id="name" class="form__input" />
-          <label for="name">Postcode</label>
-          <input type="text" name="name" id="name" class="form__input" />
-          <label for="name">City</label>
-          <input type="text" name="name" id="name" class="form__input" />
-          <label for="name">Country</label>
-          <input type="text" name="name" id="name" class="form__input" />
-        </fieldset>
-        <fieldset>
-          <legend>3. Payment Method</legend>
-          <p>Choose Payment</p>
-          <div>
-            <input type="radio" id="Paypal" name="Payment" value="Paypal" />
-            <label for="Paypal">Paypal</label>
-            <input
-              type="radio"
-              id="creditcard"
-              name="Payment"
-              value="creditcard"
-            />
-            <label for="creditcard">Credit Card</label>
+        <div class="checkout-page">
+          <section class="order-review">
+            <fieldset>
+              <legend>1.Order Review</legend>
+              <p>Product</p>
+              <p>Size</p>
+              <p>Quantity</p>
+              <p>Total Price</p>
+              <img
+                src="images/checkoutimage.jpg"
+                alt="Image of a black jacket with red details."
+              />
+              <strong>Adventure Jacket</strong>
+              <p>Color: Black</p>
+              <p>In Stock</p>
+              <p>Large</p>
+            </fieldset>
+          </section>
+          <section class="shipping-information">
+            <fieldset>
+              <legend>2. Shipping Information</legend>
+              <p>Contact Information</p>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="form__input" />
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" class="form__input" />
+              <p>Delivery Address</p>
+              <label for="name">First Name</label>
+              <input type="text" name="name" id="name" class="form__input" />
+              <label for="name">Last Name</label>
+              <input type="text" name="name" id="name" class="form__input" />
+              <label for="name">Street Address</label>
+              <input type="text" name="name" id="name" class="form__input" />
+              <label for="name">Postcode</label>
+              <input type="text" name="name" id="name" class="form__input" />
+              <label for="name">City</label>
+              <input type="text" name="name" id="name" class="form__input" />
+              <label for="name">Country</label>
+              <input type="text" name="name" id="name" class="form__input" />
+            </fieldset>
+          </section>
+          <section class="payment-method">
+            <fieldset>
+              <legend>3. Payment Method</legend>
+              <p>Choose Payment</p>
+              <div>
+                <input type="radio" id="Paypal" name="Payment" value="Paypal" />
+                <label for="Paypal">Paypal</label>
+                <input
+                  type="radio"
+                  id="creditcard"
+                  name="Payment"
+                  value="creditcard"
+                />
+                <label for="creditcard">Credit Card</label>
 
-            <input type="radio" id="klarna" name="Payment" value="klarna" />
-            <label for="klarna">Klarna</label>
-          </div>
-          <label for="name">Card Number</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="form__input"
-            required
-          />
-          <label for="name">Expedition Date</label>
-          <input
-            type="date"
-            name="date"
-            id="date"
-            class="form__input"
-            required
-          />
-          <label for="name">CVV</label>
-          <input
-            type="text"
-            name="cvv"
-            id="cvv"
-            inputmode="numeric"
-            pattern="\d*"
-            maxlength="3"
-            autocomplete="cc-csc"
-            class="form__input"
-            required
-          />
-          <label for="name">Discount Code</label>
-          <input type="text" name="name" id="name" class="form__input" />
-        </fieldset>
-        <fieldset>
-          <legend>4. Order Summary</legend>
-          <p>1x Adventure Jacket</p>
-          <p>$249.00</p>
-          <p>Subtotal</p>
-          <p>$249.00</p>
-          <p>Shipping</p>
-          <p>FREE</p>
-          <strong>TOTAL</strong>
-          <strong>$249.00</strong>
-        </fieldset>
+                <input type="radio" id="klarna" name="Payment" value="klarna" />
+                <label for="klarna">Klarna</label>
+              </div>
+              <label for="name">Card Number</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form__input"
+                required
+              />
+              <label for="name">Expedition Date</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                class="form__input"
+                required
+              />
+              <label for="name">CVV</label>
+              <input
+                type="text"
+                name="cvv"
+                id="cvv"
+                inputmode="numeric"
+                pattern="\d*"
+                maxlength="3"
+                autocomplete="cc-csc"
+                class="form__input"
+                required
+              />
+              <label for="name">Discount Code</label>
+              <input type="text" name="name" id="name" class="form__input" />
+            </fieldset>
+          </section>
+          <section class="order-summary">
+            <fieldset>
+              <legend>4. Order Summary</legend>
+              <p>1x Adventure Jacket</p>
+              <p>$249.00</p>
+              <p>Subtotal</p>
+              <p>$249.00</p>
+              <p>Shipping</p>
+              <p>FREE</p>
+              <strong>TOTAL</strong>
+              <strong>$249.00</strong>
+            </fieldset>
+          </section>
+        </div>
       </form>
       <button>Complete Order</button>
     </main>
