@@ -39,9 +39,10 @@
       <p class="header-info">Home > Shop > Product > Checkout</p>
       <form action="checkout-success.html" method="post">
         <div class="checkout-page">
+          <h1>Complete Your Order</h1>
           <section class="order-review">
+            <legend>1.Order Review</legend>
             <fieldset>
-              <legend>1.Order Review</legend>
               <p>Product</p>
               <p>Size</p>
               <p>Quantity</p>
@@ -56,95 +57,165 @@
               <p>Large</p>
             </fieldset>
           </section>
-          <section class="shipping-information">
-            <fieldset>
+          <div class="form-wrapper">
+            <section class="shipping-information">
               <legend>2. Shipping Information</legend>
-              <p>Contact Information</p>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" class="form__input" />
-              <label for="phone">Phone</label>
-              <input type="tel" name="phone" id="phone" class="form__input" />
-              <p>Delivery Address</p>
-              <label for="name">First Name</label>
-              <input type="text" name="name" id="name" class="form__input" />
-              <label for="name">Last Name</label>
-              <input type="text" name="name" id="name" class="form__input" />
-              <label for="name">Street Address</label>
-              <input type="text" name="name" id="name" class="form__input" />
-              <label for="name">Postcode</label>
-              <input type="text" name="name" id="name" class="form__input" />
-              <label for="name">City</label>
-              <input type="text" name="name" id="name" class="form__input" />
-              <label for="name">Country</label>
-              <input type="text" name="name" id="name" class="form__input" />
-            </fieldset>
-          </section>
-          <section class="payment-method">
-            <fieldset>
-              <legend>3. Payment Method</legend>
-              <p>Choose Payment</p>
-              <div>
-                <input type="radio" id="Paypal" name="Payment" value="Paypal" />
-                <label for="Paypal">Paypal</label>
+              <fieldset class="shipping-content">
+                <strong>Contact Information</strong>
+                <label for="email">Email</label>
                 <input
-                  type="radio"
-                  id="creditcard"
-                  name="Payment"
-                  value="creditcard"
+                  type="name"
+                  name="email"
+                  id="email"
+                  class="form__input"
+                  placeholder="name@example.com"
                 />
-                <label for="creditcard">Credit Card</label>
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="form__input"
+                  placeholder="12345678"
+                />
+                <strong>Delivery Address</strong>
+                <label for="name">First Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Name"
+                />
+                <label for="name">Last Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Lastname"
+                />
+                <label for="name">Street Address</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Storgata 15"
+                />
+                <label for="name">Postcode</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="1234"
+                />
+                <label for="name">City</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Oslo"
+                />
+                <label for="name">Country</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Norway"
+                />
+                <p>*Required Fields</p>
+              </fieldset>
+            </section>
 
-                <input type="radio" id="klarna" name="Payment" value="klarna" />
-                <label for="klarna">Klarna</label>
-              </div>
-              <label for="name">Card Number</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="form__input"
-                required
-              />
-              <label for="name">Expedition Date</label>
-              <input
-                type="date"
-                name="date"
-                id="date"
-                class="form__input"
-                required
-              />
-              <label for="name">CVV</label>
-              <input
-                type="text"
-                name="cvv"
-                id="cvv"
-                inputmode="numeric"
-                pattern="\d*"
-                maxlength="3"
-                autocomplete="cc-csc"
-                class="form__input"
-                required
-              />
-              <label for="name">Discount Code</label>
-              <input type="text" name="name" id="name" class="form__input" />
-            </fieldset>
-          </section>
-          <section class="order-summary">
-            <fieldset>
+            <section class="payment">
+              <legend>3. Payment Method</legend>
+              <fieldset class="payment-content">
+                <strong>Choose Payment</strong>
+                <div>
+                  <input
+                    class="payment-bullets"
+                    type="radio"
+                    id="Paypal"
+                    name="Payment"
+                    value="Paypal"
+                  />
+                  <label for="Paypal">Paypal</label>
+                  <input
+                    type="radio"
+                    id="creditcard"
+                    name="Payment"
+                    value="creditcard"
+                  />
+                  <label for="creditcard">Credit Card</label>
+
+                  <input
+                    type="radio"
+                    id="klarna"
+                    name="Payment"
+                    value="klarna"
+                  />
+                  <label for="klarna">Klarna</label>
+                </div>
+                <label for="name">Card Number</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  required
+                  placeholder="1234 **** **** ****"
+                />
+                <label for="name">Expedition Date</label>
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  class="form__input"
+                  required
+                />
+                <label for="name">CVV</label>
+                <input
+                  type="text"
+                  name="cvv"
+                  id="cvv"
+                  inputmode="numeric"
+                  pattern="\d*"
+                  maxlength="3"
+                  autocomplete="cc-csc"
+                  class="form__input"
+                  required
+                  placeholder="123"
+                />
+                <label for="name">Discount Code</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="****"
+                />
+                <p>*Required Fields</p>
+              </fieldset>
               <legend>4. Order Summary</legend>
-              <p>1x Adventure Jacket</p>
-              <p>$249.00</p>
-              <p>Subtotal</p>
-              <p>$249.00</p>
-              <p>Shipping</p>
-              <p>FREE</p>
-              <strong>TOTAL</strong>
-              <strong>$249.00</strong>
-            </fieldset>
-          </section>
+              <fieldset class="order-content">
+                <p>1x Adventure Jacket</p>
+                <p>$249.00</p>
+                <p>Subtotal</p>
+                <p>$249.00</p>
+                <p>Shipping</p>
+                <p>FREE</p>
+                <strong>TOTAL</strong>
+                <strong>$249.00</strong>
+              </fieldset>
+              <button>Complete Order</button>
+            </section>
+          </div>
         </div>
       </form>
-      <button>Complete Order</button>
     </main>
     <footer class="ft-main">
       <div class="ft-main-item">

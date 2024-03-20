@@ -431,6 +431,8 @@ ul {
   max-width: 1280px;
   margin: 8px auto;
   padding-bottom: 40px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .hr-header {
@@ -550,13 +552,145 @@ strong {
 .checkout-page {
   max-width: 1280px;
   margin: 30px auto;
+  font-family: "Inter", "Open Sans", sans-serif;
+}
+
+.checkout-page h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.checkout-page legend {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000dc;
+  padding: 16px 0;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #00000055;
+  border-radius: 8px;
+  height: 35px;
+  margin: 10px 10px 10px 0px;
+}
+
+.order-review {
+  width: 1280px;
+  margin: 30px auto;
+}
+
+fieldset {
+  border-radius: 8px;
+}
+
+.payment-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 12px;
+  padding-left: 79px;
+  padding-right: 79px;
+}
+
+.order-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 79px;
+  padding-right: 79px;
+}
+
+.shipping-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 79px;
+  padding-right: 79px;
+}
+
+.order-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .order-review > * {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.shipping-information {
+.form-wrapper {
+  width: 1280px;
+  display: flex;
+  margin: 30px auto;
+  gap: 30px;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment button {
+  margin-top: 20px;
+  margin-left: 390px;
+  background-color: #0a3641;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  width: 235px;
+  height: 48px;
+  border-radius: 25px;
+}
+
+/* Contact page */
+
+.contact-content {
+  max-width: 1280px;
+  margin: 30px auto;
+  font-family: "Inter", "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.contact-page h1 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.72px;
+}
+
+.contact-page article {
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  font-weight: 400;
+  padding: 0px 135px;
+}
+
+.contact-page p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
+.contact-page h3 {
+  font-weight: 600;
+}
+
+.contact-top {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact-information {
+  margin: 50px 0;
+}
+
+.contact-form {
+  margin: 50px 0;
   display: grid;
-  grid-template-columns: 2, 1fr;
 }
