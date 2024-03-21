@@ -636,7 +636,7 @@ fieldset {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 92px;
   padding-left: 79px;
   padding-right: 79px;
 }
@@ -674,6 +674,10 @@ fieldset {
   width: 235px;
   height: 48px;
   border-radius: 25px;
+}
+
+.card-fields {
+  display: flex;
 }
 
 /* Contact page */
