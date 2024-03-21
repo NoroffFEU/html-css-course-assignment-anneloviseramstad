@@ -461,6 +461,7 @@ ul {
   letter-spacing: -1.8px;
   font-weight: 600;
   margin: 5px 0;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .product-specific p {
@@ -537,6 +538,10 @@ strong {
   width: 100%;
 }
 
+.about-content h2 {
+  color: rgba(0, 0, 0, 0.87);
+}
+
 .about-heading {
   max-width: 1280px;
   margin: 30px auto;
@@ -558,6 +563,7 @@ strong {
   text-align: center;
   font-size: 36px;
   font-weight: 600;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .checkout-page legend {
@@ -579,6 +585,37 @@ textarea {
 .order-review {
   width: 1280px;
   margin: 30px auto;
+}
+
+.order-review__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  font-size: 16px;
+}
+
+.product-text {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product-text img {
+  padding-left: 100px;
+  margin: 0px 20px;
+  margin-bottom: 30px;
+}
+
+.jacket-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: end;
+  padding-right: 100px;
+  padding-top: 5px;
 }
 
 fieldset {
@@ -610,16 +647,6 @@ fieldset {
   padding-bottom: 50px;
   padding-left: 79px;
   padding-right: 79px;
-}
-
-.order-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.order-review > * {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .form-wrapper {
@@ -661,6 +688,7 @@ fieldset {
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 0.72px;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .contact-page article {
@@ -686,6 +714,7 @@ fieldset {
 }
 
 .contact-bottom {
+  text-align: left;
   margin-bottom: 150px;
   border-radius: 0px;
 }
@@ -695,6 +724,32 @@ fieldset {
 }
 
 .contact-form {
-  margin: 50px 0;
+  margin: 50px 125px;
   display: grid;
+}
+
+.contact-form form {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-formwrapper {
+  display: flex;
+  width: 1000px;
+  gap: 120px;
+}
+
+.contact-formwrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  width: 235px;
+  height: 48px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 24px;
+  font-weight: 700;
 }

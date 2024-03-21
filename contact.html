@@ -45,7 +45,7 @@
         </article>
         <fieldset class="contact-top">
           <section class="contact-information">
-            <h3>Customer Suppport Hours:</h3>
+            <h3>Customer Support Hours:</h3>
             <p>Monday - Friday: 9:00 AM - 6:00 PM (GMT)</p>
             <h3>Contact Information:</h3>
             <ul>
@@ -78,51 +78,56 @@
             </p>
             <form>
               <form action="#" method="POST">
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
+                <div class="contact-formwrapper">
+                  <section>
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
 
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Name@example.com"
-                  required
-                />
+                    <label for="email">Email</label>
+                    <input
+                      type="name"
+                      id="email"
+                      name="email"
+                      placeholder="Name@example.com"
+                      required
+                    />
 
-                <label for="subject">Phone</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="12345678"
-                  required
-                />
+                    <label for="subject">Phone</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="12345678"
+                      required
+                    />
+                  </section>
+                  <section>
+                    <label for="subject">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                      required
+                    />
 
-                <label for="subject">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
-                  required
-                />
-
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Message"
-                  required
-                ></textarea>
-                <input type="submit" value="SUBMIT" />
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </section>
+                </div>
               </form>
+              <input class="submit-button" type="submit" value="SUBMIT" />
             </form>
           </section>
         </fieldset>
