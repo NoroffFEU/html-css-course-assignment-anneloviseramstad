@@ -12,8 +12,6 @@ body {
   background-color: #ffffff;
   min-height: 100vh;
   margin: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   padding: 0;
 }
 
@@ -24,7 +22,7 @@ header {
   padding: 0px;
   min-height: 80px;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 @media (max-width: 430px) {
@@ -455,6 +453,7 @@ ul {
   max-width: 1280px;
   padding-bottom: 100px;
   font-family: "Inter", "Open Sans", sans-serif;
+  margin: 0px auto;
 }
 
 .product-specific h1 {
@@ -668,7 +667,6 @@ fieldset {
   font-size: 18px;
   letter-spacing: 0.36px;
   font-weight: 400;
-  padding: 0px 135px;
 }
 
 .contact-page p {
@@ -683,7 +681,13 @@ fieldset {
 
 .contact-top {
   text-align: center;
-  margin: 50px 0;
+  margin: 70px 0;
+  border-radius: 0px;
+}
+
+.contact-bottom {
+  margin-bottom: 150px;
+  border-radius: 0px;
 }
 
 .contact-information {
