@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="widht=device-widht, initial-scale=1" />
-    <meta name="description" content="The checkout page for Rainydays." />
+    <meta
+      name="Get in touch with us for any inquiries about our rain jackets and outerwear. Whether you need product support, sizing advice, or have feedback, our team is here to help. Contact us today and let us assist you in your outdoor adventures."
+      content="The checkout page for Rainydays."
+    />
     <link rel="icon" href="/images/favicon1.PNG" type="image/png" />
     <link href="src/css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,10 +29,10 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="#">MEN</a></li>
-          <li><a href="#">WOMEN</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="checkout.html">CONTACT</a></li>
+          <li><a href="man.html">MEN</a></li>
+          <li><a href="man.html">WOMEN</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
           <li><a href="#">(0)CART</a></li>
         </ul>
       </nav>
@@ -48,7 +51,7 @@
             <h3>Customer Support Hours:</h3>
             <p>Monday - Friday: 9:00 AM - 6:00 PM (GMT)</p>
             <h3>Contact Information:</h3>
-            <ul>
+            <ul class="contact-address">
               <li><a href="#">Support@rainydays.com</a></li>
               <li><a href="#">Phone: +1 (555) 123-4567</a></li>
             </ul>
@@ -58,11 +61,11 @@
             <p>
               Connect with us on social media for the latest updates and news:
             </p>
-            <ul>
+            <ul class="contact-socials">
               <li><a href="#">Facebook</a></li>
               <li><a href="#">Instagram</a></li>
               <li><a href="#">Youtube</a></li>
-              <p>
+              <p class="contact-information__text">
                 Thank you for choosing Rainy days! We value your feedback and
                 look forward to assisting you.
               </p>
@@ -123,11 +126,15 @@
                       name="message"
                       placeholder="Message"
                       required
-                    ></textarea>
+                    ></textarea
+                    ><input
+                      class="submit-button"
+                      type="submit"
+                      value="SUBMIT"
+                    />
                   </section>
                 </div>
               </form>
-              <input class="submit-button" type="submit" value="SUBMIT" />
             </form>
           </section>
         </fieldset>
