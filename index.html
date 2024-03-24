@@ -9,6 +9,7 @@
     />
     <link rel="icon" href="/images/favicon1.PNG" type="image/png" />
     <link href="src/css/styles.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,18 +21,34 @@
 
   <body>
     <header>
-      <a class="header-logo" href="index.html"
-        ><img src="images/footer-logo.jpg" alt="Rainydays logo"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="man.html">MEN</a></li>
-          <li><a href="man.html">WOMEN</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="#">(0)CART</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <div>
+          <a class="header-logo" href="index.html"
+            ><img src="images/footer-logo.jpg" alt="Rainydays logo"
+          /></a>
+          <div class="nav-search" id="navSearch">
+            <img
+              src="images/nav-search.svg"
+              alt="Icon image of a blue search tool."
+            />
+          </div>
+          <div class="nav-cart" id="navCart">
+            <img src="images/nav-cart.svg" alt="Icon image of a blue cart" />
+          </div>
+          <div class="nav-toggle" id="navToggle">
+            <img src="images/nav-toggle.svg" alt="Hamburger Menu" />
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="man.html">MEN</a></li>
+            <li><a href="man.html">WOMEN</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#">CART</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -49,9 +66,15 @@
         </div>
       </section>
       <section class="shop-container">
-        <img src="images/mens.jpg" alt="Shop Men's" />
+        <img
+          src="images/mens.jpg"
+          alt="A picture of a man with a jacket sitting on a maoutain watching the sunset."
+        />
 
-        <img src="images/womens.jpg" alt="Shop Women's" />
+        <img
+          src="images/womens.jpg"
+          alt="Picture of a woman with blonde hair and a dark green jacket carrying a backpack in the woods."
+        />
       </section>
       <section class="discount-banner">
         <div class="discount-information">
@@ -69,7 +92,7 @@
           <div class="carousel-products">
             <img
               src="images/carouselimage1.jpg"
-              alt="Picture of a red and black jacket."
+              alt="Picture of a black, hooded outdoor jacket with red details on the arms and around the zippers."
             />
             <h3>Adventure Jacket</h3>
             <p>$249.00</p>
@@ -78,7 +101,7 @@
           <div class="carousel-products">
             <img
               src="images/carouselimage2.jpg"
-              alt="Picture of a red and black jacket."
+              alt="Picture of a beige, hooded rainjacket with four pockets on the front."
             />
             <h3>Adventure Jacket</h3>
             <p>$199.00</p>
@@ -87,7 +110,7 @@
           <div class="carousel-products">
             <img
               src="images/carouselimage3.jpg"
-              alt="Picture of a red and black jacket."
+              alt="Picture of a green, hooded rainjacket with two pockets on the chest."
             />
             <h3>Adventure Jacket</h3>
             <p>$199.00</p>
@@ -129,5 +152,6 @@
         </form>
       </div>
     </footer>
+    <script src="src/css/main.js"></script>
   </body>
 </html>

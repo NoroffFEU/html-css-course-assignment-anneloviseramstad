@@ -15,42 +15,102 @@ body {
   padding: 0;
 }
 
-header {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px;
-  min-height: 80px;
+  margin: 15px auto;
   max-width: 1280px;
-  margin: 10px auto;
-}
-
-header img {
-  height: 70px;
-  width: 189px;
-}
-
-@media (max-width: 430px) {
+  padding: 0 16px;
 }
 
 .header-logo {
-  margin-right: 40px;
+  height: 75px;
+  width: 180px;
 }
 
-nav li {
+header li {
   display: inline-block;
+  padding: 0 30px;
 }
 
-a {
+header li a {
   text-decoration: none;
-}
-
-header a {
   color: #0a3641;
-  padding: 15px 40px;
-  font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
+}
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  top: 1.8rem;
+  right: 3rem;
+}
+
+.nav-cart {
+  display: none;
+  position: absolute;
+  top: 2.25rem;
+  right: 5.2rem;
+}
+
+.nav-search {
+  display: none;
+  position: absolute;
+  top: 2.25rem;
+  right: 7.3rem;
+}
+
+.open {
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header li {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  header li a {
+    font-size: 20px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    width: 40px;
+    height: 38px;
+  }
+
+  .nav-cart {
+    display: flex;
+    width: 31px;
+    height: 25px;
+  }
+
+  .nav-search {
+    display: flex;
+    width: 31px;
+    height: 27px;
+  }
+
+  .header-logo {
+    display: flex;
+    width: 82px;
+    height: 68px;
+  }
 }
 
 footer {
@@ -69,7 +129,6 @@ a:hover {
 
 .ft-title {
   color: #000;
-  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 14px;
   padding-bottom: 0.1rem;
 }
@@ -159,13 +218,12 @@ input[type="submit"] {
 .explore-button {
   width: 280px;
   height: 49px;
-  font-family: "Inter", "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600;
   background-color: #45b086;
   color: #ffffff;
   padding: 10px 40px;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.5px;
   border: 1px solid #000;
   border-radius: 36px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -178,6 +236,60 @@ input[type="submit"] {
 .explore-button:hover {
   background-color: #ffffff;
   color: #45b086;
+}
+
+@media (max-width: 1000px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 35px;
+  }
+  .hero article {
+    font-size: 18px;
+  }
+  .explore-button {
+    width: 230px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero article {
+    font-size: 18px;
+  }
+  .explore-button {
+    width: 230px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero article {
+    font-size: 18px;
+  }
+  .explore-button {
+    width: 230px;
+    height: 45px;
+    font-size: 20px;
+  }
 }
 
 /* Shop Cards */
@@ -196,7 +308,13 @@ input[type="submit"] {
   height: auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1300px) {
+  .shop-container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
   .shop-container {
     grid-template-columns: 1fr;
   }
@@ -228,6 +346,15 @@ input[type="submit"] {
   padding: 0 60px;
 }
 
+@media (max-width: 600px) {
+  .discount-value {
+    font-size: 60px;
+  }
+  .discount-text {
+    font-size: 18px;
+  }
+}
+
 /* Featured products */ /*!Add buttons to carousel!*/
 
 .featured h2 {
@@ -238,7 +365,6 @@ input[type="submit"] {
   max-width: 1440px;
   color: #0a3641;
   font-size: 36px;
-  font-family: "Inter", "Open Sans", sans-serif;
   padding-left: 80px;
 }
 
@@ -247,7 +373,6 @@ input[type="submit"] {
   grid-template-columns: repeat(3, 1fr);
   max-width: 1280px;
   margin: auto;
-  font-family: "Inter", "Open Sans", sans-serif;
 }
 
 .carousel h3 {
@@ -280,8 +405,30 @@ input[type="submit"] {
   color: #ffffff;
   background-color: #0a3641;
   border-radius: 10px;
-  font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .carousel {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 10px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .featured h2 {
+    font-size: 28px;
+  }
+  .carousel h3 {
+    font-size: 16px;
+  }
+  .carousel p {
+    font-size: 16px;
+  }
 }
 
 /* Slogan */ /* !Move Minilogo to the left, not centered! */
@@ -303,7 +450,6 @@ input[type="submit"] {
 .slogan h3 {
   color: #0a3641;
   font-size: 40px;
-  font-family: "Inter", "Open Sans", sans-serif;
   font-style: italic;
   letter-spacing: -2px;
   font-weight: normal;
@@ -322,7 +468,6 @@ ul {
 .order-confirmed {
   max-width: 1280px;
   margin: 30px auto;
-  font-family: "Inter", "Open Sans", sans-serif;
   margin: 100px auto;
   display: flex;
   flex-direction: column;
@@ -391,7 +536,6 @@ ul {
 .jackets {
   max-width: 1280px;
   margin: 30px auto;
-  font-family: "Inter", "Open Sans", sans-serif;
 }
 
 .jackets h1 {
@@ -458,7 +602,6 @@ ul {
   display: flex;
   max-width: 1280px;
   padding-bottom: 100px;
-  font-family: "Inter", "Open Sans", sans-serif;
   margin: 0px auto;
 }
 
@@ -512,7 +655,6 @@ strong {
   color: #000;
   font-weight: 700;
   font-size: 18px;
-  font-family: "Inter", "Open Sans", sans-serif;
   margin: 5px 0;
 }
 
@@ -524,7 +666,6 @@ strong {
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
-  font-family: "Inter", "Open Sans", sans-serif;
   margin: 5px 0;
 }
 
@@ -534,7 +675,6 @@ strong {
   max-width: 1280px;
   margin: 80px auto;
   padding-bottom: 100px;
-  font-family: "Inter", "Open Sans", sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
@@ -562,7 +702,6 @@ strong {
 .checkout-page {
   max-width: 1280px;
   margin: 30px auto;
-  font-family: "Inter", "Open Sans", sans-serif;
 }
 
 .checkout-page h1 {
@@ -691,7 +830,6 @@ fieldset {
 .contact-content {
   max-width: 1280px;
   margin: 30px auto;
-  font-family: "Inter", "Open Sans", sans-serif;
   text-align: center;
 }
 

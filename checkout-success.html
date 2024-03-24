@@ -20,22 +20,34 @@
   </head>
   <body>
     <header>
-      <a class="header-logo" href="index.html" class="nav-logo"
-        ><img
-          height="70"
-          width="189"
-          src="images/footer-logo.jpg"
-          alt="Rainydays logo"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="man.html">MEN</a></li>
-          <li><a href="man.html">WOMEN</a></li>
-          <li><a href="about.html">ABOUT US</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-          <li><a href="#">(0)CART</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <div>
+          <a class="header-logo" href="index.html"
+            ><img src="images/footer-logo.jpg" alt="Rainydays logo"
+          /></a>
+          <div class="nav-search" id="navSearch">
+            <img
+              src="images/nav-search.svg"
+              alt="Icon image of a blue search tool."
+            />
+          </div>
+          <div class="nav-cart" id="navCart">
+            <img src="images/nav-cart.svg" alt="Icon image of a blue cart" />
+          </div>
+          <div class="nav-toggle" id="navToggle">
+            <img src="images/nav-toggle.svg" alt="Hamburger Menu" />
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="man.html">MEN</a></li>
+            <li><a href="man.html">WOMEN</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#">CART</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <hr class="hr-header" />
@@ -86,5 +98,6 @@
         </form>
       </div>
     </footer>
+    <script src="src/css/main.js"></script>
   </body>
 </html>
