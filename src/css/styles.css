@@ -137,6 +137,8 @@ a:hover {
   padding: 1.5rem 14rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
 }
 
 .ft-main-item {
@@ -145,11 +147,22 @@ a:hover {
   min-width: 200px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1300px) {
+  .ft-main {
+    justify-content: ;
+  }
+}
+
+@media (max-width: 600px) {
   .ft-main {
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
+  }
+
+  @media (max-width: 400px) {
+    .ft-main {
+    }
   }
 }
 
@@ -178,24 +191,27 @@ input[type="submit"] {
 /* Hero */
 
 .hero {
-  display: block;
-  background-color: #0a3641;
-  background-image: url(/images/header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-left: 0;
-  padding-right: 0;
-  background-position-x: right;
-  background-position-y: bottom;
-  min-height: 70vh;
-  position: relative;
+  display: grid;
+  grid-template-rows: 400px auto;
+  grid-template-areas: "image" "text";
+  margin-bottom: 160px;
 }
 
-.hero-content {
-  position: absolute;
+.background-image {
+  grid-area: image;
+  background-image: url(/images/header.jpg);
+  background-color: #0a3641;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+}
+
+.hero-text {
+  grid-area: text;
+  text-align: left;
+  padding: 20px;
   color: #ffffff;
-  top: 300px;
-  left: 40px;
 }
 
 .hero h1 {
@@ -239,10 +255,6 @@ input[type="submit"] {
 }
 
 @media (max-width: 1000px) {
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-  }
   .hero h1 {
     font-size: 35px;
   }
@@ -257,38 +269,33 @@ input[type="submit"] {
 }
 
 @media (max-width: 600px) {
-  .hero-content {
-    display: flex;
-    flex-direction: column;
+  .hero {
+    grid-template-rows: 320px auto;
+    margin-bottom: 10px;
+  }
+  .background-image {
+    height: 325px;
+  }
+  .hero-text {
+    background-color: #f5f5f5;
+    color: #0a3641;
+    width: 100%;
   }
   .hero h1 {
     font-size: 28px;
+    margin: 20px 20px;
   }
   .hero article {
     font-size: 18px;
+    width: 80%;
+    margin: 10px 20px;
+    padding-bottom: 0;
   }
   .explore-button {
     width: 230px;
     height: 45px;
     font-size: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .hero h1 {
-    font-size: 28px;
-  }
-  .hero article {
-    font-size: 18px;
-  }
-  .explore-button {
-    width: 230px;
-    height: 45px;
-    font-size: 20px;
+    margin: 20px;
   }
 }
 
@@ -317,6 +324,7 @@ input[type="submit"] {
 @media (max-width: 600px) {
   .shop-container {
     grid-template-columns: 1fr;
+    margin: 20px auto;
   }
 }
 
@@ -330,6 +338,7 @@ input[type="submit"] {
   font-size: 80px;
   padding-left: 10px;
   padding-right: 10px;
+  margin: 100px 0;
 }
 
 .discount-text {
@@ -344,14 +353,20 @@ input[type="submit"] {
   max-width: 1280px;
   margin: 50px auto;
   padding: 0 60px;
+  gap: 30px;
 }
 
 @media (max-width: 600px) {
+  .discount-information {
+    margin: 10px auto;
+    padding: 0 20px;
+  }
   .discount-value {
-    font-size: 60px;
+    font-size: 65px;
   }
   .discount-text {
-    font-size: 18px;
+    font-size: 20px;
+    padding: 40px 0;
   }
 }
 
@@ -369,33 +384,60 @@ input[type="submit"] {
 }
 
 .carousel {
+  position: relative;
+  height: 500px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  width: 362px;
+}
+
+.carousel__track-container > * {
+  background: #ffffff;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 1280px;
-  margin: auto;
+  gap: 70px;
 }
 
-.carousel h3 {
-  color: #2b2b2b;
-  font-weight: 700;
-  font-size: 24px;
-  margin: 10px 5px;
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.carousel p {
-  color: #2b2b2b;
-  font-weight: 500;
-  font-size: 24px;
-  margin: 5px;
-}
-
-.carousel img {
+.carousel__slide {
+  top: 0;
+  bottom: 0;
   width: 100%;
 }
 
-.carousel-products {
-  display: grid;
-  justify-content: center;
+.carousel__slide-four {
+  display: none;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  display: none;
+  left: -58px;
+}
+
+.carousel__button--right {
+  right: -35px;
+}
+
+.carousel__button img {
+  width: 50px;
 }
 
 .shop-button {
@@ -454,6 +496,24 @@ input[type="submit"] {
   letter-spacing: -2px;
   font-weight: normal;
   font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .slogan {
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .slogan strong {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .slogan h3 {
+    font-size: 28px;
+    text-align: left;
+    margin: 0;
+  }
 }
 
 /* Footer */ /*How do i center the items inside the footer?*/
