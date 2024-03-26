@@ -7,6 +7,21 @@
 
 /* Styles for every page */
 
+.hr-header {
+  max-width: 1280px;
+  height: 0px;
+  margin: 0 auto;
+  background-color: #0a3641;
+}
+
+.header-info {
+  max-width: 1280px;
+  margin: 8px auto;
+  padding: 0 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+}
+
 body {
   font-family: "Inter", "Open Sans", sans-serif;
   background-color: #ffffff;
@@ -113,6 +128,56 @@ header li a {
   }
 }
 
+@media (max-width: 600px) {
+  .nav-toggle {
+    width: 36px;
+    height: 34px;
+  }
+
+  .nav-cart {
+    width: 27px;
+    height: 21px;
+  }
+
+  .nav-search {
+    width: 27px;
+    height: 23px;
+  }
+
+  .header-logo {
+    width: 42px;
+    height: 58px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-toggle {
+    width: 30px;
+    height: 30px;
+    top: 28.4px;
+    right: 30px;
+  }
+
+  .nav-cart {
+    width: 23px;
+    height: 19px;
+    top: 34.5px;
+    right: 55.5px;
+  }
+
+  .nav-search {
+    width: 23px;
+    height: 19px;
+    top: 34px;
+    right: 80px;
+  }
+
+  .header-logo {
+    width: 42px;
+    height: 58px;
+  }
+}
+
 footer {
   background-color: #f5f5f5;
   color: #000;
@@ -147,22 +212,23 @@ a:hover {
   min-width: 200px;
 }
 
-@media (max-width: 1300px) {
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media (max-width: 1400px) {
   .ft-main {
-    justify-content: ;
+    justify-content: center;
+    gap: 20px;
+    padding: 1.5rem 0;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .ft-main {
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
-  }
-
-  @media (max-width: 400px) {
-    .ft-main {
-    }
   }
 }
 
@@ -204,7 +270,7 @@ input[type="submit"] {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 75vh;
+  height: 80vh;
 }
 
 .hero-text {
@@ -212,6 +278,7 @@ input[type="submit"] {
   text-align: left;
   padding: 20px;
   color: #ffffff;
+  margin-top: -50px;
 }
 
 .hero h1 {
@@ -270,11 +337,12 @@ input[type="submit"] {
 
 @media (max-width: 600px) {
   .hero {
-    grid-template-rows: 320px auto;
+    grid-template-rows: 390px auto;
     margin-bottom: 10px;
   }
   .background-image {
-    height: 325px;
+    height: 375px;
+    width: auto;
   }
   .hero-text {
     background-color: #f5f5f5;
@@ -296,6 +364,41 @@ input[type="submit"] {
     height: 45px;
     font-size: 20px;
     margin: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    grid-template-rows: 350px auto;
+    margin-bottom: 10px;
+  }
+  .background-image {
+    height: 300px;
+    width: auto;
+  }
+  .hero-text {
+    background-color: #f5f5f5;
+    color: #0a3641;
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 24px;
+    margin: 10px 10px;
+    margin-left: 0;
+  }
+  .hero article {
+    font-size: 16px;
+    width: 100%;
+    margin: 10px 20px;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+  .explore-button {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -323,8 +426,16 @@ input[type="submit"] {
 
 @media (max-width: 600px) {
   .shop-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     margin: 20px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .shop-container {
+    display: block;
+    margin: 10px 5px;
+    padding: 10px 0;
   }
 }
 
@@ -370,6 +481,20 @@ input[type="submit"] {
   }
 }
 
+@media (max-width: 400px) {
+  .discount-information {
+    padding: 0 10px;
+    gap: 0;
+  }
+  .discount-value {
+    font-size: 50px;
+  }
+  .discount-text {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
+
 /* Featured products */ /*!Add buttons to carousel!*/
 
 .featured h2 {
@@ -384,70 +509,33 @@ input[type="submit"] {
 }
 
 .carousel {
-  position: relative;
-  height: 500px;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.carousel__image {
-  width: 362px;
-}
-
-.carousel__track-container > * {
-  background: #ffffff;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  max-width: 1280px;
+  margin: auto;
 }
 
-.carousel__track {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.carousel h3 {
+  color: #2b2b2b;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 10px 5px;
 }
 
-.carousel__slide {
-  top: 0;
-  bottom: 0;
+.carousel p {
+  color: #2b2b2b;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.carousel img {
   width: 100%;
 }
 
-.carousel__slide-four {
-  display: none;
-}
-
-.carousel__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-
-.carousel__button--left {
-  display: none;
-  left: -58px;
-}
-
-.carousel__button--right {
-  right: -35px;
-}
-
-.carousel__button img {
-  width: 50px;
-}
-
-.shop-button {
-  width: 100px;
-  padding: 8px 30px;
-  font-size: 0.8em;
-  color: #ffffff;
-  background-color: #0a3641;
-  border-radius: 10px;
-  font-weight: 500;
+.carousel-products {
+  display: grid;
+  justify-content: center;
 }
 
 @media (max-width: 1000px) {
@@ -464,6 +552,21 @@ input[type="submit"] {
   }
   .featured h2 {
     font-size: 28px;
+  }
+  .carousel h3 {
+    font-size: 16px;
+  }
+  .carousel p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .carousel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured h2 {
+    font-size: 23px;
   }
   .carousel h3 {
     font-size: 16px;
@@ -514,13 +617,6 @@ input[type="submit"] {
     text-align: left;
     margin: 0;
   }
-}
-
-/* Footer */ /*How do i center the items inside the footer?*/
-
-ul {
-  list-style: none;
-  padding-left: 0;
 }
 
 /* CHECKOUT SUCCESS PAGE */
@@ -596,6 +692,7 @@ ul {
 .jackets {
   max-width: 1280px;
   margin: 30px auto;
+  padding: 0 20px;
 }
 
 .jackets h1 {
@@ -634,29 +731,57 @@ ul {
   margin: 50px 0;
 }
 
+.shop-button {
+  width: 100px;
+  padding: 8px 30px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #0a3641;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .jackets h1 {
+    font-size: 28px;
+  }
+  .jackets h2 {
+    font-size: 18px;
+  }
+
+  .products {
+    margin: 20px 0;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .jackets h1 {
+    font-size: 25px;
+  }
+  .jackets h2 {
+    font-size: 18px;
+  }
+  .jackets p {
+    font-size: 15px;
+  }
+
+  .products {
+    margin: 15px 0;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
+  }
+}
+
 /*  Product Specific Page */
-
-.header-info {
-  max-width: 1280px;
-  margin: 8px auto;
-  padding-bottom: 40px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.hr-header {
-  width: 1280px;
-  height: 0px;
-  margin: 0 auto;
-  background-color: #0a3641;
-}
-
-.hr-product {
-  width: 625px;
-  height: 0px;
-  margin: 0px auto;
-  background-color: #0a3641;
-}
 
 .product-specific {
   display: flex;
@@ -734,6 +859,8 @@ strong {
 .about-content {
   max-width: 1280px;
   margin: 80px auto;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
