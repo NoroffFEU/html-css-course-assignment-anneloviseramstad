@@ -93,11 +93,11 @@
                     alt="Image of a black jacket with red details."
                   />
                 </div>
-                <div>
-                  <strong>$249.00</strong>
-                  <p>RAINYDAYS DESIGN</p>
-                  <article>adventure jacket in black</article>
-                  <strong>Black - Large</strong>
+                <div class="mobile__order-info">
+                  <strong>RAINYDAYS DESIGN</strong>
+                  <p>$249.00</p>
+                  <article>adventure jacket black</article>
+                  <strong>Large</strong>
                   <p>Qty: 1</p>
                 </div>
               </div>
@@ -181,7 +181,7 @@
 
             <section class="payment">
               <legend>3. Payment Method</legend>
-              <fieldset>
+              <fieldset class="payment-content">
                 <strong>Choose Payment</strong>
                 <div class="payment-radio">
                   <input
@@ -207,7 +207,7 @@
                   />
                   <label for="klarna">Klarna</label>
                 </div>
-                <div class="payment-content">
+                <div class="payment-information">
                   <label for="name">Card Number</label>
                   <input
                     type="text"
@@ -228,7 +228,7 @@
                         required
                       />
                     </div>
-                    <div>
+                    <div class="card-fields__cvv">
                       <label for="name">CVV</label>
                       <input
                         type="text"
@@ -236,7 +236,6 @@
                         id="cvv"
                         inputmode="numeric"
                         pattern="\d*"
-                        maxlength="3"
                         autocomplete="cc-csc"
                         class="form__input"
                         required
@@ -257,20 +256,22 @@
               </fieldset>
               <legend>4. Order Summary</legend>
               <fieldset class="order-content">
-                <div>
-                  <p>1x Adventure Jacket</p>
+                <div class="order-content__1">
+                  <p>1xAdventure Jacket</p>
                   <p>Subtotal</p>
                   <p>Shipping</p>
                   <strong>TOTAL</strong>
                 </div>
-                <div>
+                <div class="order-content__2">
                   <p>$249.00</p>
                   <p>$249.00</p>
                   <p>FREE</p>
                   <strong>$249.00</strong>
                 </div>
               </fieldset>
-              <button>Complete Order</button>
+              <a href="checkout-success.html">
+                <button class="complete-order">Complete Order</button></a
+              >
             </section>
           </div>
         </form>

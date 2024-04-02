@@ -30,6 +30,31 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -280,7 +305,9 @@ input[type="submit"] {
   margin-top: -355px;
 }
 
-.hero h1 {
+.hero-heading {
+  color: #fff;
+  text-align: left;
   font-size: 40px;
   font-weight: 600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -350,6 +377,7 @@ input[type="submit"] {
     margin-top: 0;
   }
   .hero h1 {
+    color: #0a3641;
     font-size: 28px;
     margin: 20px 20px;
   }
@@ -454,6 +482,13 @@ input[type="submit"] {
   }
 }
 
+@media (max-width: 800px) {
+  .shop-mens,
+  .shop-womens {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 600px) {
   .shop-container {
     display: flex;
@@ -507,6 +542,12 @@ input[type="submit"] {
   margin: 50px auto;
   padding: 0 60px;
   gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .discount-text {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -749,13 +790,6 @@ input[type="submit"] {
 }
 
 @media (max-width: 430px) {
-  .order-confirmed h1 {
-    font-size: 20px;
-    padding: 0;
-  }
-}
-
-@media (max-width: 430px) {
   .order-confirmed article {
     font-size: 14px;
     padding: 0 30px;
@@ -774,14 +808,6 @@ input[type="submit"] {
   max-width: 1280px;
   margin: 30px auto;
   padding: 0 20px;
-}
-
-.jackets h1 {
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: -1.8px;
-  color: rgba(0, 0, 0, 0.87);
-  text-align: center;
 }
 
 .jackets h2 {
@@ -823,9 +849,6 @@ input[type="submit"] {
 }
 
 @media (max-width: 600px) {
-  .jackets h1 {
-    font-size: 28px;
-  }
   .jackets h2 {
     font-size: 18px;
   }
@@ -841,9 +864,6 @@ input[type="submit"] {
 }
 
 @media (max-width: 400px) {
-  .jackets h1 {
-    font-size: 25px;
-  }
   .jackets h2 {
     font-size: 18px;
   }
@@ -867,16 +887,12 @@ input[type="submit"] {
 .product-specific {
   display: flex;
   max-width: 1280px;
-  padding-bottom: 100px;
+  padding: 60px 0;
   margin: 0px auto;
 }
 
-.product-specific h1 {
-  font-size: 36px;
-  letter-spacing: -1.8px;
-  font-weight: 600;
-  margin: 5px 0;
-  color: rgba(0, 0, 0, 0.87);
+.product-h1 {
+  text-align: left;
 }
 
 .product-specific p {
@@ -915,7 +931,7 @@ strong {
 .button-select {
   width: 235px;
   height: 48px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 1 px solid #000;
   background-color: #ffffff;
   color: #000;
@@ -927,7 +943,7 @@ strong {
 .button-add {
   width: 235px;
   height: 48px;
-  border-radius: 25px;
+  border-radius: 10px;
   background-color: #0a3641;
   color: #ffffff;
   font-weight: 700;
@@ -935,18 +951,55 @@ strong {
   margin: 5px 0;
 }
 
+@media (max-width: 1280px) {
+  .product-specific {
+    padding: 50px 20px;
+  }
+  .product-specific__content {
+    padding: 40px;
+  }
+  .product-specific p {
+    margin: 0;
+  }
+  .product-specific article {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product-specific {
+    display: block;
+    padding: 0;
+  }
+  .product-specific img {
+    width: 100%;
+  }
+  .button-add,
+  .button-select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-specific__content {
+    padding: 20px;
+  }
+  .product-specific p,
+  article {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .button-add,
+  .button-select {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
 /* About Us page*/
 .about-page {
   max-width: 1280px;
   margin: 50px auto;
-}
-
-.about-heading {
-  color: #2b2b2b;
-  font-weight: 600;
-  font-size: 36px;
-  text-align: center;
-  padding-bottom: 30px;
 }
 
 .about-content {
@@ -984,9 +1037,6 @@ strong {
 }
 
 @media (max-width: 1020px) {
-  .about-heading {
-    padding-bottom: 0;
-  }
   .about-content {
     grid-gap: 50px;
   }
@@ -1013,9 +1063,6 @@ strong {
 }
 
 @media (max-width: 400px) {
-  .about-heading {
-    font-size: 20px;
-  }
   .about-content h2 {
     font-size: 18px;
   }
@@ -1031,13 +1078,6 @@ strong {
   margin: 30px auto;
 }
 
-.checkout-page h1 {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.87);
-}
-
 .checkout-page legend {
   font-size: 24px;
   font-weight: 700;
@@ -1049,9 +1089,11 @@ input,
 select,
 textarea {
   border: 1px solid #00000055;
-  border-radius: 8px;
+  border-radius: 2px;
   height: 35px;
   margin: 10px 10px 10px 0px;
+  font-size: 16px;
+  padding: 8px;
 }
 
 .order-review {
@@ -1090,7 +1132,9 @@ textarea {
 }
 
 fieldset {
-  border-radius: 8px;
+  border-radius: 0;
+  background-color: #f5f5f5;
+  border: none;
 }
 
 .shipping-content {
@@ -1103,22 +1147,32 @@ fieldset {
 }
 
 .payment-content {
-  display: flex;
-  flex-direction: column;
   padding-top: 25px;
   padding-bottom: 12px;
   padding-left: 79px;
   padding-right: 79px;
 }
 
+.payment-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-radio {
+  padding: 30px 79px;
+}
+
 .order-content {
   display: flex;
   flex-direction: row;
-  gap: 200px;
-  padding-top: 25px;
-  padding-bottom: 92px;
-  padding-left: 79px;
-  padding-right: 79px;
+  line-height: 36.4px;
+  gap: 100px;
+  padding: 25px 79px;
+}
+
+.order-content__2 {
+  flex: 1;
+  text-align: right;
 }
 
 .form-wrapper {
@@ -1134,7 +1188,7 @@ fieldset {
   flex-direction: column;
 }
 
-.payment button {
+.complete-order {
   margin-top: 20px;
   background-color: #0a3641;
   color: #ffffff;
@@ -1144,10 +1198,12 @@ fieldset {
   width: 235px;
   height: 48px;
   border-radius: 25px;
+  align-self: flex-end;
 }
 
 .card-fields {
   display: flex;
+  justify-content: space-between;
 }
 
 .order-review__mobile {
@@ -1161,6 +1217,7 @@ fieldset {
 }
 
 @media (max-width: 1200px) {
+  .order-content,
   .shipping-content,
   .payment-content {
     padding-left: 50px;
@@ -1175,9 +1232,14 @@ fieldset {
   .subtotal {
     padding-right: 50px;
   }
+  .payment-radio {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: 1000px) {
+  .order-content,
   .shipping-content,
   .payment-content {
     padding-left: 10px;
@@ -1186,6 +1248,18 @@ fieldset {
   .product-text img {
     padding-left: 10px;
   }
+  .order-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 0;
+  }
+  .payment-radio {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .checkout-page legend {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -1193,15 +1267,51 @@ fieldset {
     display: none;
   }
   .order-review__mobile {
-    padding: 20px 0;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .mobile__order-info {
+    text-align: right;
   }
   .subtotal {
     padding-right: 0;
   }
   .form-wrapper {
     display: block;
+  }
+
+  .complete-order {
+    align-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .order-review__mobile {
+    padding: 5px;
+  }
+  .order-content__2 {
+    padding: 0 20px;
+    flex: 0.9;
+  }
+  .card-fields {
+    display: block;
+  }
+  .card-fields__cvv {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .checkout-page legend {
+    font-size: 16px;
+  }
+  .checkout-page p,
+  article,
+  strong,
+  input,
+  label {
+    font-size: 14px;
   }
 }
 
@@ -1211,13 +1321,6 @@ fieldset {
   max-width: 1280px;
   margin: 30px auto;
   text-align: center;
-}
-
-.contact-page h1 {
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: 0.72px;
-  color: rgba(0, 0, 0, 0.87);
 }
 
 .contact-page article {
