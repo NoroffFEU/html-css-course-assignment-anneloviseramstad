@@ -77,11 +77,11 @@
               <li><a href="#">Facebook</a></li>
               <li><a href="#">Instagram</a></li>
               <li><a href="#">Youtube</a></li>
-              <p class="contact-information__text">
-                Thank you for choosing Rainy days! We value your feedback and
-                look forward to assisting you.
-              </p>
             </ul>
+            <p class="contact-information__text">
+              Thank you for choosing Rainy days! We value your feedback and look
+              forward to assisting you.
+            </p>
           </section>
         </fieldset>
         <fieldset class="contact-bottom">
@@ -91,62 +91,55 @@
               Use the form below to send us a message, and we'll get back to you
               as soon as possible.
             </p>
-            <form>
-              <form action="#" method="POST">
-                <div class="contact-formwrapper">
-                  <section>
-                    <label for="name">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                      required
-                    />
 
-                    <label for="email">Email</label>
-                    <input
-                      type="name"
-                      id="email"
-                      name="email"
-                      placeholder="Name@example.com"
-                      required
-                    />
+            <form action="#" method="POST">
+              <div class="contact-formwrapper">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
 
-                    <label for="subject">Phone</label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder="12345678"
-                      required
-                    />
-                  </section>
-                  <section>
-                    <label for="subject">Subject</label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder="Subject"
-                      required
-                    />
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Name@example.com"
+                    required
+                  />
 
-                    <label for="message">Message</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Message"
-                      required
-                    ></textarea
-                    ><input
-                      class="submit-button"
-                      type="submit"
-                      value="SUBMIT"
-                    />
-                  </section>
+                  <label for="phone">Phone</label>
+                  <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    placeholder="12345678"
+                    required
+                  />
                 </div>
-              </form>
+                <div>
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                  />
+
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                  ></textarea
+                  ><input class="submit-button" type="submit" value="SUBMIT" />
+                </div>
+              </div>
             </form>
           </section>
         </fieldset>
