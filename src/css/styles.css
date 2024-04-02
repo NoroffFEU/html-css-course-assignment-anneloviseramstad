@@ -949,6 +949,7 @@ strong {
   font-weight: 700;
   font-size: 18px;
   margin: 5px 0;
+  cursor: pointer;
 }
 
 @media (max-width: 1280px) {
@@ -1199,6 +1200,7 @@ fieldset {
   height: 48px;
   border-radius: 25px;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .card-fields {
@@ -1416,4 +1418,5 @@ fieldset {
   border-radius: 25px;
   font-size: 24px;
   font-weight: 700;
+  cursor: pointer;
 }
