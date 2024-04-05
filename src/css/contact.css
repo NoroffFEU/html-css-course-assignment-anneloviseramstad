@@ -1,0 +1,152 @@
+/* CONTACT PAGE */
+
+.contact-page {
+  max-width: 1280px;
+  margin: 20px auto;
+}
+
+.contact-page article p {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.36px;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.contact-page p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
+.contact-page h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact-information__text {
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.contact-address a,
+.contact-socials a {
+  line-height: 46px;
+  color: #064e41dc;
+  font-weight: 700;
+}
+
+.contact-top {
+  text-align: center;
+  margin: 70px 0;
+  border-radius: 0px;
+}
+
+.contact-bottom {
+  text-align: left;
+  margin-bottom: 100px;
+  border-radius: 0px;
+}
+
+.contact-information {
+  margin: 50px 0;
+}
+
+.contact-information > * {
+  margin: 30px 0;
+}
+
+.contact-form {
+  margin: 50px 125px;
+  display: grid;
+}
+
+.contact-form form {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-form > * {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-formwrapper {
+  display: flex;
+  width: auto;
+  gap: 120px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.contact-formwrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-formwrapper ::placeholder {
+  font-size: 16px;
+  padding-left: 8px;
+}
+
+input {
+  border: none;
+}
+.submit-button {
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .contact-formwrapper {
+    gap: 50px;
+  }
+  .contact-form {
+    margin: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-formwrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form,
+  .contact-bottom {
+    margin: 50px 0px;
+    padding: 0 10px;
+  }
+  .contact-top {
+    margin: 10px 0;
+  }
+  .submit-button {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contact-page article p {
+    font-size: 16px;
+  }
+  .contact-page h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-page article p {
+    font-size: 12px;
+  }
+  .contact-page h3 {
+    font-size: 15px;
+  }
+  .submit-button {
+    font-size: 18px;
+  }
+}
