@@ -4,13 +4,13 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
-@import url("https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/index.css");
-@import url("https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/product.html");
-@import url("https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/checkout.html");
-@import url("https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/checkout-success.html");
-@import url("https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/man.html");
-@import url("https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/about.html");
-@import url("https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/contact.html");
+@import url("/index.css");
+@import url("/product.css");
+@import url("/checkout.css");
+@import url("/checkout-success.css");
+@import url("/man.css");
+@import url("/about.css");
+@import url("/contact.css");
 
 /* Styles for every page */
 

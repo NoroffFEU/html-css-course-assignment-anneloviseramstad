@@ -10,7 +10,7 @@
 
 .background-image {
   grid-area: image;
-  background-image: url(//norofffeu.github.io/images/header.jpg);
+  background-image: url(https://norofffeu.github.io/html-css-course-assignment-anneloviseramstad/images/header.jpg);
   background-color: #0a3641;
   background-size: cover;
   background-position: center;
