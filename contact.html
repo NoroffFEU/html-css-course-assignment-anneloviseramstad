@@ -52,12 +52,15 @@
     <main>
       <hr class="hr-header" />
       <p class="header-info">Home > Contact Us</p>
-      <div class="contact-content">
-        <h1>Contact Us</h1>
-        <p>
-          Have a question, comment, or just want to say hello? We'd love to hear
-          from you! Our dedicated customer support team is here to assist you.
-        </p>
+      <div class="contact-page">
+        <article>
+          <h1>Contact Us</h1>
+          <p>
+            Have a question, comment, or just want to say hello? We'd love to
+            hear from you! Our dedicated customer support team is here to assist
+            you.
+          </p>
+        </article>
         <fieldset class="contact-top">
           <section class="contact-information">
             <h3>Customer Support Hours:</h3>
@@ -86,61 +89,57 @@
         </fieldset>
         <fieldset class="contact-bottom">
           <div class="contact-form">
-            <strong>Send Us a Message:</strong>
+            <h3>Send Us a Message:</h3>
             <p>
               Use the form below to send us a message, and we'll get back to you
               as soon as possible.
             </p>
+            <div class="contact-formwrapper">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
 
-            <form action="#" method="POST">
-              <div class="contact-formwrapper">
-                <div>
-                  <label for="name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    required
-                  />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Name@example.com"
+                  required
+                />
 
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Name@example.com"
-                    required
-                  />
-
-                  <label for="phone">Phone</label>
-                  <input
-                    type="number"
-                    id="phone"
-                    name="phone"
-                    placeholder="12345678"
-                    required
-                  />
-                </div>
-                <div>
-                  <label for="subject">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Subject"
-                  />
-
-                  <label for="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Message"
-                  ></textarea
-                  ><input class="submit-button" type="submit" value="SUBMIT" />
-                </div>
+                <label for="phone">Phone</label>
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone"
+                  placeholder="12345678"
+                  required
+                />
               </div>
-            </form>
+              <div>
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                />
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+                <input class="submit-button" type="submit" value="SUBMIT" />
+              </div>
+            </div>
           </div>
         </fieldset>
       </div>
