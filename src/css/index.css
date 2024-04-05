@@ -10,7 +10,7 @@
 
 .background-image {
   grid-area: image;
-  background-image: url(/images/header.jpg);
+  background-image: url(//norofffeu.github.io/images/header.jpg);
   background-color: #0a3641;
   background-size: cover;
   background-position: center;
