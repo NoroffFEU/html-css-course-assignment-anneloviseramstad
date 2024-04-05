@@ -4,6 +4,7 @@
 /* These are marked with an underscore: */
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
+
 @import url("./index.css");
 @import url("./product.css");
 @import url("./checkout.css");
