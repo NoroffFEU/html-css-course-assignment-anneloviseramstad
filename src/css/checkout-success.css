@@ -1,0 +1,79 @@
+/* CHECKOUT SUCCESS PAGE */
+
+.order-confirmed {
+  max-width: 1280px;
+  margin: 30px auto;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.order-confirmed img {
+  width: auto;
+  height: auto;
+}
+
+.order-confirmed h1 {
+  color: #0a3641;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.order-confirmed h2 {
+  color: #000000c6;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.order-confirmed p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 40px 0;
+  max-width: 700px;
+}
+
+.continue-button {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #0a3641;
+  border-radius: 38px;
+  width: 390px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 0px;
+}
+
+@media (max-width: 700px) {
+  .order-confirmed {
+    padding: 0 20px;
+  }
+  .order-confirmed h1 {
+    font-size: 30px;
+  }
+  .continue-button {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .order-confirmed img {
+    width: 40%;
+  }
+  .order-confirmed p {
+    font-size: 14px;
+    padding: 0 30px;
+  }
+  .order-confirmed button {
+    font-size: 14px;
+  }
+  .order-confirmed h1 {
+    font-size: 25px;
+  }
+}

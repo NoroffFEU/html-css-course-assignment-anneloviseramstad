@@ -5,15 +5,272 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+@import url("./index.css");
+@import url("./product.css");
+@import url("./checkout.css");
+@import url("./checkout-success.css");
+@import url("./man.css");
+@import url("./about.css");
+@import url("./contact.css");
+
+/* Styles for every page */
+
+.hr-header {
+  max-width: 1280px;
+  height: 0px;
+  margin: 0 auto;
+  background-color: #0a3641;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
+.header-info {
+  max-width: 1280px;
+  margin: 8px auto;
+  padding: 0 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+body {
+  font-family: "Inter", "Open Sans", sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.87);
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* header, navigation */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px auto;
+  max-width: 1280px;
+  padding: 0 16px;
+}
+
+.header-logo img {
+  height: auto;
+  width: 60%;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+header li a {
+  text-decoration: none;
+  color: #0a3641;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*burger menu*/
+
+.nav-toggle {
+  display: none;
+  position: absolute;
+  top: 1.8rem;
+  right: 3rem;
+}
+
+.nav-cart {
+  display: none;
+  position: absolute;
+  top: 2.25rem;
+  right: 5.2rem;
+}
+
+.nav-search {
+  display: none;
+  position: absolute;
+  top: 2.25rem;
+  right: 7.3rem;
+}
+
+.open {
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header li {
+    display: block;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  header li a {
+    font-size: 20px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    width: 40px;
+    height: 38px;
+  }
+
+  .nav-cart {
+    display: flex;
+    width: 31px;
+    height: 25px;
+  }
+
+  .nav-search {
+    display: flex;
+    width: 31px;
+    height: 27px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-toggle {
+    width: 36px;
+    height: 34px;
+  }
+
+  .nav-cart {
+    width: 27px;
+    height: 21px;
+  }
+
+  .nav-search {
+    width: 27px;
+    height: 23px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-toggle {
+    width: 30px;
+    height: 30px;
+    top: 28.4px;
+    right: 30px;
+  }
+
+  .nav-cart {
+    width: 23px;
+    height: 19px;
+    top: 34.5px;
+    right: 55.5px;
+  }
+
+  .nav-search {
+    width: 23px;
+    height: 19px;
+    top: 34px;
+    right: 80px;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ft-title {
+  color: #000;
+  font-size: 14px;
+  padding-bottom: 0.1rem;
+}
+
+.ft-main {
+  padding: 1.5rem 14rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+
+.ft-main-item {
+  max-width: 1280px;
+  padding: 1.25rem;
+  min-width: 200px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media (max-width: 1400px) {
+  .ft-main {
+    justify-content: center;
+    gap: 20px;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .ft-main {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+
+input[type="submit"] {
+  background-color: #0a3641;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
 }

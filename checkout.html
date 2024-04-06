@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Enjoy fast, safe payment options and embark on your next adventure with confidence. Get your products first and pay after you get them home. Only pay for the products you would like to keep. No hidden charges."
+      content="The checkout page for Rainydays."
+    />
+    <link rel="icon" href="/images/favicon1.PNG" type="image/png" />
+    <link href="src/css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rainydays | Checkout</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div>
+          <a class="header-logo" href="index.html"
+            ><img
+              src="images/footer-logo.jpg"
+              alt="Dark green sketch of a mountain with the text 'Rainydays' and the slogan 'Pushing the comfort zone' underneath."
+          /></a>
+          <div class="nav-search" id="navSearch">
+            <img
+              src="images/nav-search.svg"
+              alt="Dark green icon image of a search tool."
+            />
+          </div>
+          <div class="nav-cart" id="navCart">
+            <img
+              src="images/nav-cart.svg"
+              alt="Dark green icon image of a cart"
+            />
+          </div>
+          <div class="nav-toggle" id="navToggle">
+            <img
+              src="images/nav-toggle.svg"
+              alt="Dark green icon of three lines underneath eachother symbolising a hamburger menu."
+            />
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="man.html">MEN</a></li>
+            <li><a href="man.html">WOMEN</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#">CART</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <hr class="hr-header" />
+      <p class="header-info">Home > Shop > Product > Checkout</p>
+      <div class="checkout-page">
+        <h1>Complete Your Order</h1>
+        <form action="checkout-success.html" method="post">
+          <section class="order-review">
+            <h2>1.Order Review</h2>
+            <fieldset>
+              <div class="order-review__content">
+                <div class="product-info">
+                  <p>Product</p>
+                  <div class="product-text">
+                    <img
+                      src="images/checkoutimage.jpg"
+                      alt="Image of a hooded, black jacket with red details on the arms and two zip-pockets."
+                    />
+                    <div class="jacket-info">
+                      <strong>Adventure Jacket</strong>
+                      <p>Color: Black</p>
+                      <p>In Stock</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="size-info">
+                  <p>Size</p>
+                  <p>Large</p>
+                </div>
+                <div class="quantity-info">
+                  <p>Quantity</p>
+                  <p>-1+</p>
+                </div>
+                <div class="total-price">
+                  <p>Total Price</p>
+                  <p>$249.00</p>
+                </div>
+              </div>
+              <div class="order-review__mobile">
+                <div>
+                  <img
+                    src="images/checkoutimage.jpg"
+                    alt="Image of a black jacket with red details."
+                  />
+                </div>
+                <div class="mobile__order-info">
+                  <strong>RAINYDAYS DESIGN</strong>
+                  <p>$249.00</p>
+                  <article>adventure jacket black</article>
+                  <strong>Large</strong>
+                  <p>Qty: 1</p>
+                </div>
+              </div>
+              <hr />
+              <strong class="subtotal">Subtotal $249.00</strong>
+            </fieldset>
+          </section>
+          <section class="form-wrapper">
+            <div class="shipping-information">
+              <h2>2. Shipping Information</h2>
+              <fieldset class="shipping-content">
+                <strong class="shipping-strong">Contact Information</strong>
+                <label for="email">Email*</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form__input"
+                  placeholder="name@example.com"
+                />
+                <label for="phone">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="form__input"
+                  placeholder="12345678"
+                />
+                <strong class="shipping-strong">Delivery Address</strong>
+                <label for="name">First Name*</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form__input"
+                  placeholder="Name"
+                />
+                <label for="lastname">Last Name*</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  class="form__input"
+                  placeholder="Lastname"
+                />
+                <label for="address">Street Address*</label>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  class="form__input"
+                  placeholder="Storgata 15"
+                />
+                <label for="postcode">Postcode*</label>
+                <input
+                  type="text"
+                  name="postcode"
+                  id="postcode"
+                  class="form__input"
+                  placeholder="1234"
+                />
+                <label for="city">City*</label>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  class="form__input"
+                  placeholder="Oslo"
+                />
+                <label for="country">Country</label>
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  class="form__input"
+                  placeholder="Norway"
+                />
+                <p>*Required Fields</p>
+              </fieldset>
+            </div>
+            <div class="payment">
+              <h2>3. Payment Method</h2>
+              <fieldset class="payment-content">
+                <strong>Choose Payment</strong>
+                <div class="payment-options">
+                  <div>
+                    <input
+                      type="radio"
+                      id="payment1"
+                      name="payment1"
+                      value="Paypal"
+                    />
+                    <label for="payment1">Paypal</label><br />
+                    <input
+                      type="radio"
+                      id="payment2"
+                      name="payment2"
+                      value="Creditcard"
+                    />
+                    <label for="payment2">Creditcard</label><br />
+                    <input
+                      type="radio"
+                      id="payment3"
+                      name="payment3"
+                      value="Klarna"
+                    />
+                    <label for="payment3">Klarna</label>
+                  </div>
+                </div>
+                <div class="payment-information">
+                  <label for="card">Card Number*</label>
+                  <input
+                    type="text"
+                    name="cardnumber"
+                    id="card"
+                    class="form__input"
+                    required
+                    placeholder="1234 **** **** ****"
+                  />
+                  <label for="date">Expedition Date*</label>
+                  <input
+                    type="date"
+                    name="date"
+                    id="date"
+                    class="form__input"
+                    required
+                  />
+                  <label for="cvv">CVV*</label>
+                  <input
+                    type="text"
+                    name="cvv"
+                    id="cvv"
+                    inputmode="numeric"
+                    pattern="\d*"
+                    class="form__input"
+                    required
+                    placeholder="123"
+                  />
+                  <label for="discount">Discount Code</label>
+                  <input
+                    type="text"
+                    name="code"
+                    id="discount"
+                    class="form__input"
+                    placeholder="****"
+                  />
+                  <p>*Required Fields</p>
+                </div>
+              </fieldset>
+              <h2>4. Order Summary</h2>
+              <fieldset class="order-content">
+                <div class="order-content__1">
+                  <p>1xAdventure Jacket</p>
+                  <p>Subtotal</p>
+                  <p>Shipping</p>
+                  <strong>TOTAL</strong>
+                </div>
+                <div class="order-content__2">
+                  <p>$249.00</p>
+                  <p>$249.00</p>
+                  <p>FREE</p>
+                  <strong>$249.00</strong>
+                </div>
+              </fieldset>
+              <a href="checkout-success.html" class="complete-order"
+                >Complete Order</a
+              >
+            </div>
+          </section>
+        </form>
+      </div>
+    </main>
+    <footer class="ft-main">
+      <div class="ft-main-item">
+        <h2 class="ft-title">Quick Links</h2>
+        <ul>
+          <li><a href="#">Man</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Follow Us</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Newsletter</h2>
+        <p>Sign up to our newsletter to get special offers!</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </footer>
+    <script src="src/css/main.js"></script>
+  </body>
+</html>
